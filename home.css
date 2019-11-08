@@ -12,6 +12,10 @@
     padding-top: 10px;
 }
 
+input{
+    background-color: white;
+}
+
 .search{
     width: 75%;
 }
