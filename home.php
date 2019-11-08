@@ -37,9 +37,10 @@
     </div>
 
     <?php
-        for($x=0; $x < 3; $x++)
+        for($x = 0; $x < 3; $x++)
         {
-            echo "<div class='homeItems'><p>recommended items</p></div>"
+            echo "<div class="homeItems">
+            </div>";
         }
     ?>
 
