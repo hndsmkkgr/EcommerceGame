@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/gameshop'; //ini diisi link project kita
+$config['base_url'] = 'http://localhost/EcommerceGame/'; //ini diisi link project kita
 
 /*
 |--------------------------------------------------------------------------

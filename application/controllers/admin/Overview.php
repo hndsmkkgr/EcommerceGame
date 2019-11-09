@@ -1,14 +1,9 @@
-<?php
-	class Overview extends CI_Controller
-	{
-		public function __construct()
-		{
-			parent:: __construct();
-		}
+<? php 
 
-		public function index()
-		{
-			$this->load->view("admin/overview");
-		}
+class Overview extends CI_Controller{
+public function index()
+	{
+		$this->load->view('admin/overview');
 	}
- ?>
+
+}
