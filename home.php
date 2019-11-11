@@ -22,7 +22,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="super_container">
 
 	<!-- Header -->
-	<?php include 'header.php';
+	<?php include 'header.php';?>
 	
 	<!-- Home -->
 
