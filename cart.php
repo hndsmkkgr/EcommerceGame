@@ -10,15 +10,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <meta name="description" content="Sublime project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href=" <?php echo base_url ('assets/styles/bootstrap4/bootstrap.min.css')?>">
-<link href="<?php echo base_url ('plugins/font-awesome-4.7.0/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url ('styles/cart.css')?>">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url ('styles/cart_responsive.css')?>">
+<link href="<?php echo base_url ('assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url ('assets/styles/cart.css')?>">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url ('assets/styles/cart_responsive.css')?>">
 </head>
 <body>
 
 <div class="super_container">
 
 	<!-- Header -->
+	<?php include 'header.php';?>
 
 	<header class="header">
 		<div class="header_container">
@@ -329,10 +330,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 
 	<!-- Footer -->
-	
+	<?php include 'footer.php';?>
 	<div class="footer_overlay"></div>
 	<footer class="footer">
-		<div class="footer_background" style="background-image:url(images/footer.jpg)"></div>
+		<div class="footer_background" style="background-image:url(assets/images/footer.jpg)"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -356,16 +357,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</footer>
 </div>
 
-<script src="<?php echo base_url ('assets/js/jquery-3.2.1.min.js')?>"></script>
-<script src="<?php echo base_url ('assets/styles/bootstrap4/popper.js')?>"></script>
-<script src="<?php echo base_url ('assets/styles/bootstrap4/bootstrap.min.js')?>"></script>
-<script src="<?php echo base_url ('assets/plugins/greensock/TweenMax.min.js')?>"></script>
-<script src="<?php echo base_url ('assets/plugins/greensock/TimelineMax.min.js')?>"></script>
-<script src="<?php echo base_url ('assets/plugins/scrollmagic/ScrollMagic.min.js')?>"></script>
-<script src="<?php echo base_url ('assets/plugins/greensock/animation.gsap.min.js')?>"></script>
-<script src="<?php echo base_url ('assets/plugins/greensock/ScrollToPlugin.min.js')?>"></script>
-<script src="<?php echo base_url ('assets/plugins/easing/easing.js')?>"></script>
-<script src="<?php echo base_url ('assets/plugins/parallax-js-master/parallax.min.js')?>"></script>
-<script src="<?php echo base_url ('assets/js/cart.js')?>"></script>
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/styles/bootstrap4/popper.js"></script>
+<script src="assets/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="assets/plugins/greensock/TweenMax.min.js')?>"></script>
+<script src="assets/plugins/greensock/TimelineMax.min.js"></script>
+<script src="assets/plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="assets/plugins/greensock/animation.gsap.min.js"></script>
+<script src="assets/plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="assets/plugins/easing/easing.js"></script>
+<script src="assets/plugins/parallax-js-master/parallax.min.js"></script>
+<script src="assets/js/cart.js"></script>
 </body>
 </html>
