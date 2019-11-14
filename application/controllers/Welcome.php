@@ -49,4 +49,36 @@ class Welcome extends CI_Controller {
 		$this->load->view('header');
 	}
 
+	public function PS4(){
+		$data['barang'] = $this->model_kategori->data_PS4()->result();
+		$this->load->view('PS4',$data);
+
+	} 
+
+	public function PC(){
+		$data['barang'] = $this->model_kategori->data_PC()->result();
+		//$this->load->view('template_view/header');
+		//$this->load->view('template_view/footer');
+		$this->load->view('PS4',$data);
+	} 
+
+	public function xbox(){
+		$data['barang'] = $this->model_kategori->data_xbox()->result();
+		//$this->load->view('template_view/header');
+		//$this->load->view('template_view/footer');
+		$this->load->view('PS4',$data);
+	} 
+
+	public function switch(){
+		$data['barang'] = $this->model_kategori->data_switch()->result();
+		$this->load->view('template_view/header');
+		//$this->load->view('template_view/footer');
+		$this->load->view('PS4',$data);
+	} 
+
+	public function detil(){
+		$this->load->view('template_view/header');
+		$this->load->view('template_view/footer');
+	}
+
 }
