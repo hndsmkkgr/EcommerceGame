@@ -13,8 +13,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <link href="<?php echo base_url('assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css')?>">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css')?>">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/plugins/OwlCarousel2-2.2.1/animate.css')?>">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/main_styles.css')?>">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/plugins/OwlCarousel2-2.2.1/animate.css')?>">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/responsive.css')?>">
 </head>
 <body>
@@ -114,7 +114,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div class="avds">
 		<div class="avds_container d-flex flex-lg-row flex-column align-items-start justify-content-between">
 			<div class="avds_small">
-				<div class="avds_background" style="background-image:url(assets/images/avds_small.jpg)"></div>
+				<div class="avds_background" style="background-image:url(assets/images/pcGames.jpg)"></div>
 				<div class="avds_small_inner">
 					<div class="avds_discount_container">
 						<img src="assets/images/discount.png" alt="">
@@ -132,7 +132,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			</div>
 			<div class="avds_large">
-				<div class="avds_background" style="background-image:url(assets/images/avds_large.jpg)"></div>
+				<div class="avds_background" style="background-image:url(assets/images/switchGames.jpg)"></div>
 				<div class="avds_large_container">
 					<div class="avds_large_content">
 						<div class="avds_title">Nintendo Switch Games</div>
@@ -165,7 +165,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="assets/images/product_2.jpg" alt=""></div>
+							<div class="product_image"><img src="assets/images/nierAThumb.jpg" alt=""></div>
 							<div class="product_extra product_sale"><a href="categories.html">Sale</a></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.html">NieR: Automata</a></div>
@@ -175,7 +175,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="assets/images/product_3.jpg" alt=""></div>
+							<div class="product_image"><img src="assets/images/fomtThumb.png" alt=""></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.html">Story of Seasons: Friends of Mineral Town</a></div>
 								<div class="product_price">$50</div>
@@ -184,25 +184,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="assets/images/product_4.jpg" alt=""></div>
+							<div class="product_image"><img src="assets/images/botwThumb.jpg" alt=""></div>
 							<div class="product_content">
-								<div class="product_title"><a href="product.html">Legend of Zelda: Breath of the Wild 2</a></div>
+								<div class="product_title"><a href="product.html">Legend of Zelda: Breath of the Wild</a></div>
 								<div class="product_price">$59.99</div>
 							</div>
 						</div>
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="assets/images/product_5.jpg" alt=""></div>
+							<div class="product_image"><img src="assets/images/minecraftThumb.jpg" alt=""></div>
 							<div class="product_content">
-								<div class="product_title"><a href="product.html"></a></div>
-								<div class="product_price">$670</div>
+								<div class="product_title"><a href="product.html">Minecraft</a></div>
+								<div class="product_price">$29.99</div>
 							</div>
 						</div>
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="assets/images/product_6.jpg" alt=""></div>
+							<div class="product_image"><img src="assets/images/gtavThumb.jpg" alt=""></div>
 							<div class="product_extra product_hot"><a href="categories.html">Hot</a></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.html">GTA V</a></div>
@@ -212,7 +212,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="assets/images/product_7.jpg" alt=""></div>
+							<div class="product_image"><img src="assets/images/ffxvThumb.jpg" alt=""></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.html">Final Fantasy XV</a></div>
 								<div class="product_price">$39.99</div>
@@ -221,7 +221,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="assets/images/product_8.jpg" alt=""></div>
+							<div class="product_image"><img src="assets/images/mgsvThumb.jpg" alt=""></div>
 							<div class="product_extra product_sale"><a href="categories.html">Hot</a></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.html">Metal Gear Solid V: Phantom Pain</a></div>
@@ -243,7 +243,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="row">
 				<div class="col">
 					<div class="avds_xl_container clearfix">
-						<div class="avds_xl_background" style="background-image:url(assets/images/avds_xl.jpg)"></div>
+						<div class="avds_xl_background" style="background-image:url(assets/images/offer.jpg)"></div>
 						<div class="avds_xl_content">
 							<div class="avds_title">Amazing Offers!</div>
 							<div class="avds_text">Check it out!<br/>Only available until December 31, 2019.</div>
@@ -326,30 +326,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<!-- Footer -->
 	
-	<div class="footer_overlay"></div>
-	<footer class="footer">
-		<div class="footer_background" style="background-image:url(assets/images/footer.jpg)"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
-						<div class="footer_logo"><a href="#">Sublime.</a></div>
-						<div class="copyright ml-auto mr-auto"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
-						<div class="footer_social ml-lg-auto">
-							<ul>
-								<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<?php include 'footer.php';?>
+	
 </div>
 
 <script src="assets/js/jquery-3.2.1.min.js"></script>
@@ -367,46 +345,3 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="assets/js/custom.js"></script>
 </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <title>GameShop</title>
-</head>
-<body>
-    <header><center>GAMESHOP</center></header>
-    
-    <div class="topNavigation">
-        <div class="search">
-            <input type="text"  name="search" placeholder="Search an item..." size="50"/>
-            <input type="button" onClick="searchItem()" value=<img src='search.png'>>        
-        </div>
-        <div>
-            <ul>
-                    <li><a href="cart.php" class="topBar"><img src="cart.png" title="CART" alt="cart"></a></li>
-                    <li><a href="account.php" class="topBar"><img src="account.png" title="ACCOUNT" alt="account"></a></li>
-            </ul>
-        </div>
-    </div>
-
-    <ul class="navigation">
-        <li><a href="home.php">HOME</a></li>
-        <li><a href="ps4.php">PS4</a></li>
-        <li><a href="psvita.php">PS VITA</a></li>
-        <li><a href="3ds.php">3DS</a></li>
-        <li><a href="switch.php">Switch</a></li>
-        <li><a href="xbox.php">Xbox</a></li>
-        <li><a href="pc.php">PC</a></li>
-        //mestinya ganti antara acc, login, signup, kalo acc ada drop down
-    </ul>
-
-    <?php
-        for($x = 0; $x < 3; $x++)
-        {
-            echo "<div class='homeItems'>
-            </div>";
-        }
-    ?>
-        
-</body>
-</html> -->
