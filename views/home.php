@@ -265,9 +265,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="col-lg-4 icon_box_col">
 					<div class="icon_box">
 						<div class="icon_box_image"><img src="assets/images/icon_1.svg" alt=""></div>
-						<div class="icon_box_title">Free Shipping Worldwide</div>
+						<div class="icon_box_title">Get Updates</div>
 						<div class="icon_box_text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie.</p>
+							<p>Subscribe to our newsletter to receive updates on new games and discounts.</p>
 						</div>
 					</div>
 				</div>
@@ -276,9 +276,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="col-lg-4 icon_box_col">
 					<div class="icon_box">
 						<div class="icon_box_image"><img src="assets/images/icon_2.svg" alt=""></div>
-						<div class="icon_box_title">Free Returns</div>
+						<div class="icon_box_title">Install from Codes</div>
 						<div class="icon_box_text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie.</p>
+							<p>No need to wait for days nor pay additional shipping fees, you can install your game through the code we sent to your e-mail.</p>
 						</div>
 					</div>
 				</div>
@@ -289,7 +289,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="icon_box_image"><img src="assets/images/icon_3.svg" alt=""></div>
 						<div class="icon_box_title">24h Fast Support</div>
 						<div class="icon_box_text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie.</p>
+							<p>Need help? Fret not! We're ready to help for 24/7, just send us a message!</p>
 						</div>
 					</div>
 				</div>
@@ -311,11 +311,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="col-lg-8 offset-lg-2">
 					<div class="newsletter_content text-center">
 						<div class="newsletter_title">Subscribe to our newsletter</div>
-						<div class="newsletter_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros</p></div>
+						<div class="newsletter_text"><p>Please write your e-mail below</p></div>
 						<div class="newsletter_form_container">
 							<form action="#" id="newsletter_form" class="newsletter_form">
 								<input type="email" class="newsletter_input" required="required">
-								<button class="newsletter_button trans_200"><span>Subscribe</span></button>
+								<button class="newsletter_button trans_200" onclick="popup()"><span>Subscribe</span></button>
 							</form>
 						</div>
 					</div>
@@ -343,5 +343,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <script src="assets/plugins/easing/easing.js"></script>
 <script src="assets/plugins/parallax-js-master/parallax.min.js"></script>
 <script src="assets/js/custom.js"></script>
+
+<!-- script newsletter -->
+<script>
+	function popup()
+	{
+		alert("Thank you for subscribing to our newsletter!");
+	}
+</script>
 </body>
 </html>

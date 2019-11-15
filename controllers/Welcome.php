@@ -2,7 +2,10 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
-
+	public function __construct()
+		{
+			parent:: __construct();
+		}
 	/**
 	 * Index Page for this controller.
 	 *
@@ -20,30 +23,27 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('home');
-	}
-
-	public function about()
-	{
-		// fungsi untuk me-load view about.php
-		$this->load->view('about');
-	}
-
-	public function contact()
-	{
-		// fungsi untuk me-load view about.php
-		$this->load->view('contact');
-	}
-	
-	public function cart()
-	{
-		// fungsi untuk me-load view about.php
-		$this->load->view('cart');
+		$this->load->view('home.php');
 	}
 
 	public function header()
 	{
 		$this->load->view('header');
 	}
+	
+	public function footer()
+	{
+		$this->load->view('footer');
+	}
 
+	public function home()
+	{
+		$this->load->view('header');
+		$this->load->view('footer');
+	}
+
+	public function contact()
+	{
+		$this->load->view('contact.php');
+	}
 }

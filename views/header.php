@@ -19,7 +19,7 @@
 							<nav class="main_nav">
 								<ul>
 									<li class="active">
-										<a href="index.html">Home</a>
+										<a href="index.php/Welcome/home">Home</a>
 										<!-- <ul>
 											<li><a href="categories.html">Categories</a></li>
 											<li><a href="product.html">Product</a></li>
@@ -29,13 +29,13 @@
 										</ul> -->
 									</li>
 									<li class="hassubs">
-										<a href="categories.html">Platforms</a>
+										<a href="#">Platforms</a>
 										<ul>
-											<li><a href="categories.html">PS4</a></li>
-											<li><a href="categories.html">PS VITA</a></li>
-											<li><a href="categories.html">3DS</a></li>
-											<li><a href="categories.html">SWITCH</a></li>
-											<li><a href="categories.html">XBOX</a></li>
+											<li><a href="ps4.php">PS4</a></li>
+											<li><a href="psvita.php">PS VITA</a></li>
+											<li><a href="3ds.php">3DS</a></li>
+											<li><a href="switch.php">SWITCH</a></li>
+											<li><a href="xbox.php">XBOX</a></li>
 										</ul>
 									</li>
 									<li class="hassubs">
@@ -46,7 +46,7 @@
 										</ul>
 									</li>
 									<!-- <li><a href="#">Offers</a></li> -->
-									<li><a href="contact.html">About</a></li>
+									<li><a href="<?php echo base_url('index.php/Welcome/contact');?>">About</a></li>
 								</ul>
 							</nav>
 							<div class="header_extra ml-auto">
@@ -133,7 +133,7 @@
 				</div>
 				<ul class="page_menu_nav menu_mm">
 					<li class="page_menu_item has-children menu_mm">
-						<a href="index.html">Home<i class="fa fa-angle-down"></i></a>
+						<a href="index.php/Welcome/home">Home<i class="fa fa-angle-down"></i></a>
 						<ul class="page_menu_selection menu_mm">
 							<!-- <li class="page_menu_item menu_mm"><a href="categories.html">Categories<i class="fa fa-angle-down"></i></a></li>
 							<li class="page_menu_item menu_mm"><a href="product.html">Product<i class="fa fa-angle-down"></i></a></li>
@@ -142,7 +142,7 @@
 							<li class="page_menu_item menu_mm"><a href="contact.html">Contact<i class="fa fa-angle-down"></i></a></li> -->
 							<li class="page_menu_item menu_mm"><a href="platform.html">Platform<i class="fa fa-angle-down"></i></a></li>
 							<li class="page_menu_item menu_mm"><a href="account.html">Account<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="about.html">About<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="<?php echo base_url('index.php/Welcome/contact');?>">About<i class="fa fa-angle-down"></i></a></li>
 						</ul>
 					</li>
 					<li class="page_menu_item has-children menu_mm">
@@ -168,11 +168,11 @@
 						<a href="account.html">Account<i class="fa fa-angle-down"></i></a>
 						<ul class="page_menu_selection menu_mm">
 							<li class="page_menu_item menu_mm"><a href="profile.html">Profile<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="home.html">Logout<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="index.php/Welcome/home">Logout<i class="fa fa-angle-down"></i></a></li>
 						</ul>
 					</li>
 					<!-- <li class="page_menu_item menu_mm"><a href="contact.html">Contact<i class="fa fa-angle-down"></i></a></li> -->
-					<li class="page_menu_item menu_mm"><a href="about.html">About<i class="fa fa-angle-down"></i></a></li>
+					<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>index.php/Welcome/contact">About<i class="fa fa-angle-down"></i></a></li>
 				</ul>
 			</div>
 		</div>
