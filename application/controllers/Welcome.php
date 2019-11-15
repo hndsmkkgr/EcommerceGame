@@ -76,9 +76,19 @@ class Welcome extends CI_Controller {
 		$this->load->view('PS4',$data);
 	} 
 
-	public function detil(){
-		$this->load->view('template_view/header');
-		$this->load->view('template_view/footer');
+	public function detil($id_brg){
+		$this->load->model('model_barang');
+		$data['tampil_detil']=$this->model_barang->tampil_id($id_brg);
+		$data['konten']="detil";
+		$this->load->view('detil',$data);
+		
 	}
+
+	public function produk(){
+		$data['game_product']=$this->model_barang->tampil_data()->result();
+		$this->load->view('game',$data);
+	} 
+
+
 
 }
