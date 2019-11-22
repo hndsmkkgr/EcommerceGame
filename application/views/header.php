@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>GameShop</title>
+	<title>GameShop</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/header.css')?>">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Sublime project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/bootstrap4/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/plugins/OwlCarousel2-2.2.1/animate.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/contact_responsive.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/contact.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/main_styles.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/header.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/footer.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/responsive.css">
 </head>
 <body>
-    
+	<div class="super_container">    
+
 	<!-- Header -->
 
 	<header class="header">
@@ -15,18 +29,11 @@
 				<div class="row">
 					<div class="col">
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
-							<div class="logo"><a href="#">GameShop</a></div>
+							<div class="logo"><a href="<?php echo base_url();?>welcome">GameShop</a></div>
 							<nav class="main_nav">
 								<ul>
 									<li class="active">
-										<a href="index.php/Welcome/home">Home</a>
-										<!-- <ul>
-											<li><a href="categories.html">Categories</a></li>
-											<li><a href="product.html">Product</a></li>
-											<li><a href="cart.html">Cart</a></li>
-											<li><a href="checkout.html">Check out</a></li>
-											<li><a href="contact.html">Contact</a></li>
-										</ul> -->
+										<a href="<?php echo base_url();?>welcome">Home</a>
 									</li>
 									<li class="hassubs">
 										<a href="#">Platforms</a>
@@ -46,7 +53,7 @@
 										</ul>
 									</li>
 									<!-- <li><a href="#">Offers</a></li> -->
-									<li><a href="<?php echo base_url('index.php/Welcome/contact');?>">About</a></li>
+									<li><a href="<?php echo base_url();?>contact">Contact</a></li>
 								</ul>
 							</nav>
 							<div class="header_extra ml-auto">
@@ -133,26 +140,14 @@
 				</div>
 				<ul class="page_menu_nav menu_mm">
 					<li class="page_menu_item has-children menu_mm">
-						<a href="index.php/Welcome/home">Home<i class="fa fa-angle-down"></i></a>
+						<a href="<?php echo base_url();?>welcome">Home<i class="fa fa-angle-down"></i></a>
 						<ul class="page_menu_selection menu_mm">
-							<!-- <li class="page_menu_item menu_mm"><a href="categories.html">Categories<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="product.html">Product<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="cart.html">Cart<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="checkout.html">Checkout<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="contact.html">Contact<i class="fa fa-angle-down"></i></a></li> -->
 							<li class="page_menu_item menu_mm"><a href="platform.html">Platform<i class="fa fa-angle-down"></i></a></li>
 							<li class="page_menu_item menu_mm"><a href="account.html">Account<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="<?php echo base_url('index.php/Welcome/contact');?>">About<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>contact">Contact<i class="fa fa-angle-down"></i></a></li>
 						</ul>
 					</li>
 					<li class="page_menu_item has-children menu_mm">
-						<!-- <a href="categories.html">Categories<i class="fa fa-angle-down"></i></a>
-						<ul class="page_menu_selection menu_mm">
-							<li class="page_menu_item menu_mm"><a href="categories.html">Category<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="categories.html">Category<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="categories.html">Category<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="categories.html">Category<i class="fa fa-angle-down"></i></a></li>
-						</ul> -->
 						<a href="platform.html">Platform<i class="fa fa-angle-down"></i></a>
 						<ul class="page_menu_selection menu_mm">
 							<li class="page_menu_item menu_mm"><a href="categories.html">PS4<i class="fa fa-angle-down"></i></a></li>
@@ -162,17 +157,14 @@
 							<li class="page_menu_item menu_mm"><a href="categories.html">XBOX<i class="fa fa-angle-down"></i></a></li>
 						</ul>
 					</li>
-					<!-- <li class="page_menu_item menu_mm"><a href="index.html">Accessories<i class="fa fa-angle-down"></i></a></li>
-					<li class="page_menu_item menu_mm"><a href="#">Offers<i class="fa fa-angle-down"></i></a></li> -->
 					<li class="page_menu_item has-children menu_mm">
 						<a href="account.html">Account<i class="fa fa-angle-down"></i></a>
 						<ul class="page_menu_selection menu_mm">
 							<li class="page_menu_item menu_mm"><a href="profile.html">Profile<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="index.php/Welcome/home">Logout<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>welcome">Logout<i class="fa fa-angle-down"></i></a></li>
 						</ul>
 					</li>
-					<!-- <li class="page_menu_item menu_mm"><a href="contact.html">Contact<i class="fa fa-angle-down"></i></a></li> -->
-					<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>index.php/Welcome/contact">About<i class="fa fa-angle-down"></i></a></li>
+					<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>contact">Contact<i class="fa fa-angle-down"></i></a></li>
 				</ul>
 			</div>
 		</div>
@@ -188,7 +180,3 @@
 			</ul>
 		</div>
 	</div>
-	
-
-</body>
-</html>
