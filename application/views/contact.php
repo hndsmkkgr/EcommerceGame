@@ -1,28 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Contact</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Sublime project">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/bootstrap4/bootstrap.min.css')?>">
-<link href="<?php echo base_url('assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/contact.css')?>">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/contact_responsive.css')?>">
-</head>
-<body>
-
 <div class="super_container">
-
-	<!-- Header -->
-	<?php include 'header.php' ?>
 	
 	<!-- Home -->
 
 	<div class="home">
 		<div class="home_container">
-			<div class="home_background" style="background-image:url(assets/images/contact.jpg)"></div>
+			<div class="home_background" style="background-image:url(assets/images/contacts.jpg)"></div>
 			<div class="home_content_container">
 				<div class="container">
 					<div class="row">
@@ -30,7 +12,7 @@
 							<div class="home_content">
 								<div class="breadcrumbs">
 									<ul>
-										<li><a href="index.php/Welcome/home.php">Home</a></li>
+										<li><a href="<?php echo base_url();?>welcome">Home</a></li>
 										<li>Contact</li>
 									</ul>
 								</div>
@@ -76,7 +58,7 @@
 									<label for="contact_textarea">Message*</label>
 									<textarea id="contact_textarea" class="contact_input contact_textarea" required="required"></textarea>
 								</div>
-								<button class="button contact_button"><span>Send Message</span></button>
+								<button class="button contact_button" onclick="popup_contact()"><span>Send Message</span></button>
 							</form>
 						</div>
 					</div>
@@ -86,24 +68,31 @@
 				<div class="col-lg-3 offset-xl-1 contact_col">
 					<div class="contact_info">
 						<div class="contact_info_section">
-							<div class="contact_info_title">Marketing</div>
+							<div class="contact_info_title">Revyra Phoebe Fransiska</div>
 							<ul>
-								<li>Phone: <span>+53 345 7953 3245</span></li>
-								<li>Email: <span>yourmail@gmail.com</span></li>
+								<li>NIM: <span>105217020</span></li>
+								<li>GitHub: <span>hndsmkkgr</span></li>
 							</ul>
 						</div>
 						<div class="contact_info_section">
-							<div class="contact_info_title">Shippiing & Returns</div>
+							<div class="contact_info_title">Fajar Faizin</div>
 							<ul>
-								<li>Phone: <span>+53 345 7953 3245</span></li>
-								<li>Email: <span>yourmail@gmail.com</span></li>
+								<li>NIM: <span>10521700</span></li>
+								<li>GitHub: <span>ffaizin</span></li>
 							</ul>
 						</div>
 						<div class="contact_info_section">
-							<div class="contact_info_title">Information</div>
+							<div class="contact_info_title">Ario Dwiponco</div>
 							<ul>
-								<li>Phone: <span>+53 345 7953 3245</span></li>
-								<li>Email: <span>yourmail@gmail.com</span></li>
+								<li>NIM: <span>1052170</span></li>
+								<li>GitHub: <span>ariodwiponco</span></li>
+							</ul>
+						</div>
+						<div class="contact_info_section">
+							<div class="contact_info_title">Ricky Rivaldo Manik</div>
+							<ul>
+								<li>NIM: <span>1052170</span></li>
+								<li>GitHub: <span>rickymanik</span></li>
 							</ul>
 						</div>
 					</div>
@@ -125,21 +114,3 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- Footer -->
-	
-	<?php include 'footer.php' ?>
-
-<script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="assets/tyles/bootstrap4/popper.js"></script>
-<script src="assets/tyles/bootstrap4/bootstrap.min.js"></script>
-<script src="assets/plugins/greensock/TweenMax.min.js"></script>
-<script src="assets/plugins/greensock/TimelineMax.min.js"></script>
-<script src="assets/plugins/scrollmagic/ScrollMagic.min.js"></script>
-<script src="assets/plugins/greensock/animation.gsap.min.js"></script>
-<script src="assets/plugins/greensock/ScrollToPlugin.min.js"></script>
-<script src="assets/plugins/easing/easing.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
-<script src="assets/js/contact.js"></script>
-</body>
-</html>

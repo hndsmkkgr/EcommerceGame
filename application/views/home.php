@@ -1,31 +1,8 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>GameShop</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Sublime project">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/bootstrap4/bootstrap.min.css')?>">
-<link href="<?php echo base_url('assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css')?>">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css')?>">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/main_styles.css')?>">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/plugins/OwlCarousel2-2.2.1/animate.css')?>">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/responsive.css')?>">
-</head>
-<body>
-
 <div class="super_container">
-
-	<?php include 'header.php' ?>;
 
 	<!-- Home -->
 
-	<div class="home">
+	<div class="home" id="home">
 		<div class="home_slider_container">
 			
 			<!-- Home Slider -->
@@ -315,7 +292,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="newsletter_form_container">
 							<form action="#" id="newsletter_form" class="newsletter_form">
 								<input type="email" class="newsletter_input" required="required">
-								<button class="newsletter_button trans_200" onclick="popup()"><span>Subscribe</span></button>
+								<button class="newsletter_button trans_200" onclick="popup_home()"><span>Subscribe</span></button>
 							</form>
 						</div>
 					</div>
@@ -323,33 +300,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div>
 	</div>
-
-	<!-- Footer -->
-	
-	<?php include 'footer.php';?>
 	
 </div>
-
-<script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="assets/styles/bootstrap4/popper.js"></script>
-<script src="assets/styles/bootstrap4/bootstrap.min.js"></script>
-<script src="assets/plugins/greensock/TweenMax.min.js"></script>
-<script src="assets/plugins/greensock/TimelineMax.min.js"></script>
-<script src="assets/plugins/scrollmagic/ScrollMagic.min.js"></script>
-<script src="assets/plugins/greensock/animation.gsap.min.js"></script>
-<script src="assets/plugins/greensock/ScrollToPlugin.min.js"></script>
-<script src="assets/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="assets/plugins/Isotope/isotope.pkgd.min.js"></script>
-<script src="assets/plugins/easing/easing.js"></script>
-<script src="assets/plugins/parallax-js-master/parallax.min.js"></script>
-<script src="assets/js/custom.js"></script>
-
-<!-- script newsletter -->
-<script>
-	function popup()
-	{
-		alert("Thank you for subscribing to our newsletter!");
-	}
-</script>
-</body>
-</html>
