@@ -64,15 +64,11 @@ class Welcome extends CI_Controller {
 
 	public function xbox(){
 		$data['barang'] = $this->model_kategori->data_xbox()->result();
-		//$this->load->view('template_view/header');
-		//$this->load->view('template_view/footer');
 		$this->load->view('PS4',$data);
 	} 
 
 	public function switch(){
 		$data['barang'] = $this->model_kategori->data_switch()->result();
-		$this->load->view('template_view/header');
-		//$this->load->view('template_view/footer');
 		$this->load->view('PS4',$data);
 	} 
 
@@ -81,13 +77,15 @@ class Welcome extends CI_Controller {
 		$data['tampil_detil']=$this->model_barang->tampil_id($id_brg);
 		$data['konten']="detil";
 		$this->load->view('detil',$data);
-		
 	}
 
-	public function produk(){
-		$data['game_product']=$this->model_barang->tampil_data()->result();
-		$this->load->view('game',$data);
-	} 
+	public function platform(){
+	$data['barang'] = $this->model_barang->tampil_data()->result();
+		$this->load->view('PS4',$data);
+
+	}
+
+	
 
 
 
