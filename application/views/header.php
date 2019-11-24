@@ -29,13 +29,14 @@
 										</ul> -->
 									</li>
 									<li class="hassubs">
-										<a href="categories.html">Platforms</a>
+										<a href="<?= base_url()?>index.php/welcome/platform/.categories.html">Platforms</a>
+										
 										<ul>
-											<li><a href="categories.html">PS4</a></li>
-											<li><a href="categories.html">PS VITA</a></li>
+											<li><a href="<?= base_url()?>index.php/welcome/PS4/.categories.html">PS4</a></li>
+											<li><a href="<?= base_url()?>index.php/welcome/PC/.categories.html">PC</a></li>
 											<li><a href="categories.html">3DS</a></li>
 											<li><a href="categories.html">SWITCH</a></li>
-											<li><a href="categories.html">XBOX</a></li>
+											<li><a href="<?= base_url()?>index.php/welcome/xbox/.categories.html">XBOX</a></li>
 										</ul>
 									</li>
 									<li class="hassubs">
