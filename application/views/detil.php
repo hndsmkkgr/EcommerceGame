@@ -24,12 +24,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
   <!-- Home -->
 
-  <div class="col-md-4" style="margin-top: 250px; float:left;" />
+  <div class="col-md-4" style="margin-top: 250px;" />
     <div class ="thumbnail" >
-      <img src="<?=base_url()?>/upload/<?= $tampil_detil->gambar;?>" style="width: 50%;">
+      <img src="<?=base_url()?>/upload/<?= $tampil_detil->gambar;?>" style="width: 50%; margin-left: 15px;">
   </div>
 
-  <div class = "col-md-8">
+  <div class = "col-md-8" " >
     <table class ="table table-hover table-striped">
       <tr>
         <td>Judul Game</td><td> <?= $tampil_detil->nama_brg;?></td>

@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <link rel="stylesheet" type="text/css" href="<?php echo base_url ('assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css')?>">
 
 </head>
-<body>
+<body style="max-width: 90%; margin:5%;">
 
 <div class="super_container">
 
@@ -29,7 +29,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <div class="row"style="margin-right: 10px; margin-left: 2rem;">
     <?php foreach ($barang as $brg) : ?> 
      <div class="card" style="width: 18rem;">
-      <img src="<?php echo base_url().'/upload/'.$brg->gambar ?>" class="card-img-top" alt="">
+      <div style="">
+        <img src="<?php echo base_url().'/upload/'.$brg->gambar ?>" class="card-img-top" alt="" style="float:left; margin:0 8px 8px 0; max-height: 13rem;">
+      </div>
       <div class="card-body">
         <h5 class="card-title"><?php echo $brg->nama_brg ?></h5>
         <small><?php echo $brg->nama_brg; ?></small><br>
