@@ -41,7 +41,7 @@
 {
 	font-size: 30px;
 	line-height: 0.75;
-	color: #1b1b1b;
+	color: white;
 	font-weight: 700;
 }
 .copyright
@@ -50,7 +50,11 @@
 	text-align: center;
 	font-size: 14px;
 	font-weight: 400;
-	color: #1b1b1b;
+	color: white;
+}
+.copyright a
+{
+	color: rgb(255, 166, 193);
 }
 .footer_social
 {
@@ -68,7 +72,7 @@
 .footer_social ul li a i
 {
 	font-size: 17px;
-	color: #1b1b1b;
+	color: white;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -77,5 +81,5 @@
 }
 .footer_social ul li a i:hover
 {
-	color: #FFFFFF;
+	color: white;
 }
