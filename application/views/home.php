@@ -1,31 +1,8 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>GameShop</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Sublime project">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/bootstrap4/bootstrap.min.css')?>">
-<link href="<?php echo base_url('assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css')?>">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css')?>">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/main_styles.css')?>">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/plugins/OwlCarousel2-2.2.1/animate.css')?>">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/responsive.css')?>">
-</head>
-<body>
-
 <div class="super_container">
-
-	<?php include 'header.php' ?>;
 
 	<!-- Home -->
 
-	<div class="home">
+	<div class="home" id="home">
 		<div class="home_slider_container">
 			
 			<!-- Home Slider -->
@@ -114,7 +91,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div class="avds">
 		<div class="avds_container d-flex flex-lg-row flex-column align-items-start justify-content-between">
 			<div class="avds_small">
-				<div class="avds_background" style="background-image:url(assets/images/avds_small.jpg)"></div>
+				<div class="avds_background" style="background-image:url(assets/images/pcGames.jpg)"></div>
 				<div class="avds_small_inner">
 					<div class="avds_discount_container">
 						<img src="assets/images/discount.png" alt="">
@@ -132,7 +109,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			</div>
 			<div class="avds_large">
-				<div class="avds_background" style="background-image:url(assets/images/avds_large.jpg)"></div>
+				<div class="avds_background" style="background-image:url(assets/images/switchGames.jpg)"></div>
 				<div class="avds_large_container">
 					<div class="avds_large_content">
 						<div class="avds_title">Nintendo Switch Games</div>
@@ -184,9 +161,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="assets/images/product_4.jpg" alt=""></div>
+							<div class="product_image"><img src="assets/images/botwThumb.jpg" alt=""></div>
 							<div class="product_content">
-								<div class="product_title"><a href="product.html">Legend of Zelda: Breath of the Wild 2</a></div>
+								<div class="product_title"><a href="product.html">Legend of Zelda: Breath of the Wild</a></div>
 								<div class="product_price">$59.99</div>
 							</div>
 						</div>
@@ -202,7 +179,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="assets/images/product_6.jpg" alt=""></div>
+							<div class="product_image"><img src="assets/images/gtavThumb.jpg" alt=""></div>
 							<div class="product_extra product_hot"><a href="categories.html">Hot</a></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.html">GTA V</a></div>
@@ -212,7 +189,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="assets/images/product_7.jpg" alt=""></div>
+							<div class="product_image"><img src="assets/images/ffxvThumb.jpg" alt=""></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.html">Final Fantasy XV</a></div>
 								<div class="product_price">$39.99</div>
@@ -221,7 +198,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="assets/images/product_8.jpg" alt=""></div>
+							<div class="product_image"><img src="assets/images/mgsvThumb.jpg" alt=""></div>
 							<div class="product_extra product_sale"><a href="categories.html">Hot</a></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.html">Metal Gear Solid V: Phantom Pain</a></div>
@@ -243,7 +220,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="row">
 				<div class="col">
 					<div class="avds_xl_container clearfix">
-						<div class="avds_xl_background" style="background-image:url(assets/images/avds_xl.jpg)"></div>
+						<div class="avds_xl_background" style="background-image:url(assets/images/offer.jpg)"></div>
 						<div class="avds_xl_content">
 							<div class="avds_title">Amazing Offers!</div>
 							<div class="avds_text">Check it out!<br/>Only available until December 31, 2019.</div>
@@ -265,9 +242,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="col-lg-4 icon_box_col">
 					<div class="icon_box">
 						<div class="icon_box_image"><img src="assets/images/icon_1.svg" alt=""></div>
-						<div class="icon_box_title">Free Shipping Worldwide</div>
+						<div class="icon_box_title">Get Updates</div>
 						<div class="icon_box_text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie.</p>
+							<p>Subscribe to our newsletter to receive updates on new games and discounts.</p>
 						</div>
 					</div>
 				</div>
@@ -276,9 +253,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="col-lg-4 icon_box_col">
 					<div class="icon_box">
 						<div class="icon_box_image"><img src="assets/images/icon_2.svg" alt=""></div>
-						<div class="icon_box_title">Free Returns</div>
+						<div class="icon_box_title">Install from Codes</div>
 						<div class="icon_box_text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie.</p>
+							<p>No need to wait for days nor pay additional shipping fees, you can install your game through the code we sent to your e-mail.</p>
 						</div>
 					</div>
 				</div>
@@ -289,7 +266,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="icon_box_image"><img src="assets/images/icon_3.svg" alt=""></div>
 						<div class="icon_box_title">24h Fast Support</div>
 						<div class="icon_box_text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie.</p>
+							<p>Need help? Fret not! We're ready to help for 24/7, just send us a message!</p>
 						</div>
 					</div>
 				</div>
@@ -311,11 +288,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="col-lg-8 offset-lg-2">
 					<div class="newsletter_content text-center">
 						<div class="newsletter_title">Subscribe to our newsletter</div>
-						<div class="newsletter_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros</p></div>
+						<div class="newsletter_text"><p>Please write your e-mail below</p></div>
 						<div class="newsletter_form_container">
 							<form action="#" id="newsletter_form" class="newsletter_form">
 								<input type="email" class="newsletter_input" required="required">
-								<button class="newsletter_button trans_200"><span>Subscribe</span></button>
+								<button class="newsletter_button trans_200" onclick="popup_home()"><span>Subscribe</span></button>
 							</form>
 						</div>
 					</div>
@@ -323,25 +300,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div>
 	</div>
-
-	<!-- Footer -->
-	
-	<?php include 'footer.php';?>
 	
 </div>
-
-<script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="assets/styles/bootstrap4/popper.js"></script>
-<script src="assets/styles/bootstrap4/bootstrap.min.js"></script>
-<script src="assets/plugins/greensock/TweenMax.min.js"></script>
-<script src="assets/plugins/greensock/TimelineMax.min.js"></script>
-<script src="assets/plugins/scrollmagic/ScrollMagic.min.js"></script>
-<script src="assets/plugins/greensock/animation.gsap.min.js"></script>
-<script src="assets/plugins/greensock/ScrollToPlugin.min.js"></script>
-<script src="assets/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="assets/plugins/Isotope/isotope.pkgd.min.js"></script>
-<script src="assets/plugins/easing/easing.js"></script>
-<script src="assets/plugins/parallax-js-master/parallax.min.js"></script>
-<script src="assets/js/custom.js"></script>
-</body>
-</html>

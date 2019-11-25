@@ -48,8 +48,8 @@
 									<li class="hassubs">
 										<a href="#">Account</a>
 										<ul>
-											<li><a href="<?php echo base_url();?>profile">Profile</a></li>
-											<li><a href="<?php echo base_url();?>welcome">Logout</a></li>
+											<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li>
 										</ul>
 									</li>
 									<li><a href="<?php echo base_url();?>contact">Contact</a></li>
@@ -159,8 +159,8 @@
 					<li class="page_menu_item has-children menu_mm">
 						<a href="<?php echo base_url();?>account">Account<i class="fa fa-angle-down"></i></a>
 						<ul class="page_menu_selection menu_mm">
-							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>profile">Profile<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>welcome">Logout<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="#">Sign Up<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="#">log In<i class="fa fa-angle-down"></i></a></li>
 						</ul>
 					</li>
 					<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>contact">Contact<i class="fa fa-angle-down"></i></a></li>
