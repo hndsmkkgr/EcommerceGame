@@ -4,7 +4,7 @@
 
 	<div class="home">
 		<div class="home_container">
-			<div class="home_background" style="background-image:url(assets/images/contacts.jpg)"></div>
+			<div class="home_background" style="background-image:url(assets/images/contactUs.jpg)"></div>
 			<div class="home_content_container">
 				<div class="container">
 					<div class="row">
@@ -77,14 +77,14 @@
 						<div class="contact_info_section">
 							<div class="contact_info_title">Fajar Faizin</div>
 							<ul>
-								<li>NIM: <span>10521700</span></li>
+								<li>NIM: <span>105217004</span></li>
 								<li>GitHub: <span>ffaizin</span></li>
 							</ul>
 						</div>
 						<div class="contact_info_section">
 							<div class="contact_info_title">Ario Dwiponco</div>
 							<ul>
-								<li>NIM: <span>1052170</span></li>
+								<li>NIM: <span>105217030</span></li>
 								<li>GitHub: <span>ariodwiponco</span></li>
 							</ul>
 						</div>
