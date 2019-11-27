@@ -30,7 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <?php foreach ($barang as $brg) : ?> 
      <div class="card" style="width: 18rem;">
       <div style="">
-        <a href="<?= base_url()?>index.php/welcome/detil/<?= $brg->id_brg;?>"class="thumbnail"</a>  
+        <a href="<?= base_url()?>index.php/Platform/detil/<?= $brg->id_brg;?>"class="thumbnail"</a>  
         <img src="<?php echo base_url().'/upload/'.$brg->gambar ?>" class="card-img-top" alt="" style="float:left; margin:0 8px 8px 0; max-height: 13rem;">
       </div>
       <div class="card-body">
