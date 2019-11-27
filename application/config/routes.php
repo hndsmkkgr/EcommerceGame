@@ -56,6 +56,8 @@ $route['contact'] = 'contact';
 $route['platform'] = 'platform';
 $route['PS4'] = 'PS4';
 $route['Xbox'] = 'Xbox';
+$route['detil'] = 'detil';
+
 
 
 $route['home'] = 'home';
