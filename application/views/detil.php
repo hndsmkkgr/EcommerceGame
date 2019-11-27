@@ -57,3 +57,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <script src="assets/js/product.js"></script>
 </body>
 </html>
+      

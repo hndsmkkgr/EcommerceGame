@@ -8,9 +8,6 @@ class Platform extends CI_Controller {
 		$data['barang'] = $this->model_kategori->data_PC()->result();
 		$this->load->view('PS4',$data);
 	} 
-
-	
-
 	
 */
 
@@ -28,6 +25,21 @@ class Platform extends CI_Controller {
 		$this->load->view('detil',$data);
 	}
 
+	public function tambah_keranjang($id)
+	{
+		$barang = $this->model_barang->find($id);
+		$data = array(
+        'id'      => $barang->id_brg,
+        'qty'     => 1,
+        'price'   => $barang->harga,
+        'name'    => $barang->nama_brg
+        
+		);
+
+		$this->cart->insert($data);
+		//$insert = $this->load->view('header');
+		redirect('localhost/gameshop/platform');
+	}
 	
 
 	

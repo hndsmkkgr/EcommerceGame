@@ -37,7 +37,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <h5 class="card-title"><?php echo $brg->nama_brg ?></h5>
         <small><?php echo $brg->nama_brg; ?></small><br>
         <span class="badge badge-pill badge-success">Rp. <?php echo $brg->harga; ?></span><br>
-        <a href="#" class="btn btn-sm btn-primary">Tambah ke Kerangjang</a>
+         <?php echo anchor('Platform/tambah_keranjang/'.$brg->id_brg,'<div class="btn btn-sm btn-primary">Tambah ke Kerangjang</div>') ?>
       </div>
     </div>
   <?php endforeach; ?>
