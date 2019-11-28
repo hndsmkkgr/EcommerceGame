@@ -24,8 +24,21 @@
 			</div>
 		</div>
     </footer>
-</body>
-</html>
+
+
+
+<script>
+function popup_home() {
+  alert("Thank you for subscribing to our newsletter!");
+}
+</script>
+
+<script>
+function popup_contact() {
+  alert("Thanks for contacting us, we'll reply shortly :D");
+}
+</script>
+
 
 
 <script src="<?php base_url();?>assets/js/jquery-3.2.1.min.js"></script>
@@ -43,15 +56,8 @@
 <script src="<?php base_url();?>assets/js/custom.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
 <script src="<?php base_url();?>assets/js/contact.js"></script>
+</body>
+</html>
 
-<script>
-function popup_home() {
-  alert("Thank you for subscribing to our newsletter!");
-}
-</script>
 
-<script>
-function popup_contact() {
-  alert("Thanks for contacting us, we'll reply shortly :D");
-}
-</script>
+
