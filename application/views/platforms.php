@@ -27,7 +27,7 @@
     <?php foreach ($barang as $brg) : ?> 
      <div class="card" style="width: 18rem; margin-right: 25px; margin-bottom: 25px;">
       <div style=""> 
-        <a href="<?= base_url()?>index.php/Detil/index/<?= $brg->id_brg;?>">
+        <a href="<?= base_url()?>platform/Detil<?= $brg->id_brg;?>">
           <img src="<?php echo base_url().'/upload/'.$brg->gambar ?>" class="card-img-top" alt="" style="float:left;  max-height: 13rem;">
         </a>
       </div>
@@ -35,7 +35,7 @@
         <h5 class="card-title"><?php echo $brg->nama_brg ?></h5>
         <small><?php echo $brg->nama_brg; ?></small><br>
         <span class="badge badge-pill badge-success">Rp. <?php echo $brg->harga; ?></span><br>
-         <?php echo anchor('platform/keranjang/'. $brg->id_brg, '<div class="btn btn-sm btn-primary">Tambah ke Keranjang</div>') ?>
+         <?php echo anchor ('platform/keranjang/'. $brg->id_brg, '<div class="btn btn-sm btn-primary">Tambah ke Keranjang</div>') ?>
       </div>
     </div>
   <?php endforeach; ?>
