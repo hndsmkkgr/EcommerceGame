@@ -15,7 +15,7 @@ class Welcome extends CI_Controller {
 		// else
 		// {
 
-		// 	$this->load->view('header');
+			// $this->load->view('header');
 		// }
 		$this->load->view('home'/*, $data*/);
 		$this->load->view('footer');
@@ -29,7 +29,5 @@ class Welcome extends CI_Controller {
 		// $data['dataGame'] = $this->Game->tampil_data()->result;
 		// $data['dataGame'] = $this->Game->tampil_id()->result;
 	}
-
-	
 }
 ?>

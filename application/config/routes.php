@@ -53,12 +53,5 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['contact'] = 'contact';
-$route['platform'] = 'platform';
-$route['PS4'] = 'PS4';
-$route['Xbox'] = 'Xbox';
-$route['Detil'] = 'Detil';
-
-
-
 $route['home'] = 'home';
 ?>

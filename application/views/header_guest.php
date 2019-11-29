@@ -12,6 +12,14 @@
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/plugins/OwlCarousel2-2.2.1/animate.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/contact_responsive.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/cart_responsive.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/categories_responsive.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/checkout_responsive.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/product_responsive.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/cart.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/categories.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/checkout.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/product.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/contact.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/signupLogin.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/main_styles.css">
@@ -115,16 +123,6 @@
 				</div>
 			</div>
 		</div>
-
-		<!-- Social -->
-		<div class="header_social">
-			<ul>
-				<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-			</ul>
-		</div>
 	</header>
 
 	<!-- Menu -->
@@ -170,22 +168,13 @@
 		</div>
 
 		<div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
-
-		<div class="menu_social">
-			<ul>
-				<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-			</ul>
-		</div>
 	</div>
 
 	<!-- signup -->
 
 <div id="signup" class="modal">
 	<span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">&times;</span>
-  	<form class="modal-content" action="/action_page.php">
+  	<form class="modal-content" action="<?= base_url('register/registerUser') ?>" method="POST">
     <div class="container">
       	<h1>Sign Up</h1>
       	<p>Please fill in this form to create an account.</p>
@@ -218,7 +207,7 @@
 
 <div id="login" class="modal">
 	<span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
-  	<form class="modal-content" action="/action_page.php">
+  	<form class="modal-content" action="login/loginUser" method = "POST">
     <div class="container">
       	<h1>Login</h1>
       	<hr>

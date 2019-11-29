@@ -118,6 +118,7 @@
 {
 	visibility: visible;
 	opacity: 1;
+	color: #e95a5a;
 	top: calc(100% + 0px);
 }
 .hassubs ul li:not(:last-child)
@@ -139,10 +140,10 @@
 {
 	color: #e95a5a;
 }
-.header_extra
+/* .header_extra
 {
 
-}
+} */
 .shopping_cart
 {
 	display: inline-block;
@@ -256,8 +257,8 @@
 	outline: none;
 	border-radius: 3px;
 	padding-left: 20px;
-}
-.search_input::-webkit-input-placeholder
+} */
+/* .search_input::-webkit-input-placeholder
 {
 	font-size: 14px !important;
 	font-weight: 400 !important;
@@ -291,42 +292,6 @@
 	font-weight: 400 !important;
 	font-style: italic;
 	color: #796363 !important;
-}
-.header_social
-{
-	position: absolute;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
-	right: 60px;
-	z-index: 1;
-	margin-right: -5px;
-}
-.header_social ul li
-{
-	display: inline-block;
-}
-.header_social ul li:not(:last-child)
-{
-	margin-right: 18px;
-}
-.header_social ul li a i
-{
-	font-size: 16px;
-	color: #b5b5b5;
-	padding: 5px;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.header_social ul li a i:hover
-{
-	color: #e95a5a;
 }
 
 /*********************************
@@ -371,10 +336,10 @@
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
-.page_menu_nav
+/* .page_menu_nav
 {
 
-}
+} */
 .page_menu_search_input
 {
 	width: 100%;
@@ -457,35 +422,6 @@
 .page_menu_selection li:last-child a
 {
 	border-bottom: none;
-}
-.menu_social
-{
-	position: absolute;
-	right: 30px;
-	bottom: 15px;
-}
-.menu_social ul li
-{
-	display: inline-block;
-}
-.menu_social ul li:not(:last-child)
-{
-	margin-right: 18px;
-}
-.menu_social ul li a i
-{
-	font-size: 16px;
-	color: #b5b5b5;
-	padding: 5px;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.menu_social ul li a i:hover
-{
-	color: #e95a5a;
 }
 .menu_close
 {
