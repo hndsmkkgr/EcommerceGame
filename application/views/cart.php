@@ -35,7 +35,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										<ul>
 											<li><a href="categories.html">Categories</a></li>
 											<li><a href="product.html">Product</a></li>
-											<li><a href="cart.html">Cart</a></li>
+											<li><a href="<?php base_url()?>./cart/">Cart</a></li>
 											<li><a href="checkout.html">Check out</a></li>
 											<li><a href="contact.html">Contact</a></li>
 										</ul>
@@ -222,17 +222,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<!-- Cart Item -->
 					<div class="cart_item d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
 						<!-- Name -->
-						<div class="cart_item_product d-flex flex-row align-items-center justify-content-start">
+						<div class="cart_item_product d-flex flex-row align-items-center justify-content-start"><?php
+						foreach ($this->cart->content() as $items) : ?>
 							<div class="cart_item_image">
 								<div><img src="images/cart_1.jpg" alt=""></div>
 							</div>
 							<div class="cart_item_name_container">
-								<div class="cart_item_name"><a href="#">Smart Phone Deluxe Edition</a></div>
+								<div class="cart_item_name"> <?php echo $items['name'] ?></div>
 								<div class="cart_item_edit"><a href="#">Edit Product</a></div>
 							</div>
 						</div>
 						<!-- Price -->
-						<div class="cart_item_price">$790.90</div>
+						<div class="cart_item_price"><?php echo number_format ($items['price'],0,',','.') ?></div>
 						<!-- Quantity -->
 						<div class="cart_item_quantity">
 							<div class="product_quantity_container">

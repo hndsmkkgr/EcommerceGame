@@ -19,7 +19,7 @@ class Platform extends CI_Controller {
 
 	}
 
-	public function detil($id_brg){
+	public function Detil($id_brg){
 		$this->load->model('model_barang');
 		$this->load->view('header');
 		$data['tampil_detil']=$this->model_barang->tampil_id($id_brg);
@@ -31,6 +31,7 @@ class Platform extends CI_Controller {
 	public function keranjang($id)
 	{
 		$barang = $this->model_barang->find($id);
+		
 		$data = array(
         'id'      => $barang->id_brg,
         'qty'     => 1,
@@ -41,8 +42,16 @@ class Platform extends CI_Controller {
 
 		$this->cart->insert($data);
 		//$insert = $this->load->view('header');
-		redirect('platform/index');
+		redirect('platform');
 	}
+
+	public function detail_keranjang()
+	{
+		$this->load->view('header');
+		$this->load->view('cart');
+		$this->load->view('footer'); 
+	}
+
 	
 
 	
