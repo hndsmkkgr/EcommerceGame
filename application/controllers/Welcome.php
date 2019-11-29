@@ -29,5 +29,7 @@ class Welcome extends CI_Controller {
 		// $data['dataGame'] = $this->Game->tampil_data()->result;
 		// $data['dataGame'] = $this->Game->tampil_id()->result;
 	}
+
+	
 }
 ?>
