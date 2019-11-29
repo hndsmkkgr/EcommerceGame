@@ -44,14 +44,42 @@
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
 <script src="<?php base_url();?>assets/js/contact.js"></script>
 
+<!-- subscribe -->
 <script>
-function popup_home() {
-  alert("Thank you for subscribing to our newsletter!");
-}
+	function popup_home() {
+  	alert("Thank you for subscribing to our newsletter!");
+	}
+</script>
+
+<!-- kirim message -->
+<script>
+	function popup_contact() 
+	{
+  		alert("Thanks for contacting us, we'll reply shortly :D");
+	}
+</script>
+
+<!-- /* Get the modal */ -->
+
+<script>
+	var modal = document.getElementById('signup');
+	window.onclick = function(event) 
+	{
+		if (event.target == modal) 
+		{
+    	modal.style.display = "none";
+  		}
+	}
+/* When the user clicks anywhere outside of the modal, close it */
 </script>
 
 <script>
-function popup_contact() {
-  alert("Thanks for contacting us, we'll reply shortly :D");
-}
+	var modal = document.getElementById('login');
+	window.onclick = function(event)
+	{
+		if (event.target == modal)
+		{
+			modal.style.display = "none";
+		}
+	}
 </script>

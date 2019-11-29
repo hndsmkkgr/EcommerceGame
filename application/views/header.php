@@ -10,12 +10,12 @@
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/plugins/OwlCarousel2-2.2.1/animate.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/contact_responsive.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/contact.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/main_styles.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/header.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/footer.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/plugins/OwlCarousel2-2.2.1/animate.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/responsive.css">
 </head>
 <body>
@@ -115,7 +115,15 @@
 			</div>
 		</div>
 
-		
+		<!-- Social -->
+		<div class="header_social">
+			<ul>
+				<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
 	</header>
 
 	<!-- Menu -->
