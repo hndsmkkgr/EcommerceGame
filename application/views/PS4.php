@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <div class="row"style="margin-right: 10px; margin-left: 2rem;">
     <?php foreach ($barang as $brg) : ?> 
      <div class="card" style="width: 18rem;">
-      <a href="<?= base_url()?>Platform/detil/<?= $brg->id_brg;?>"class="thumbnail"</a>
+      <a href="<?= base_url()?>detil/<?= $brg->id_brg;?>"class="thumbnail"</a>
       <img src="<?php echo base_url().'/upload/'.$brg->gambar ?>" class="card-img-top" alt="">
       <div class="card-body">
         <h5 class="card-title"><?php echo $brg->nama_brg ?></h5>
