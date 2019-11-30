@@ -22,11 +22,28 @@ class Register extends CI_Controller {
             'name' => $name,
             'e-mail' => $email,
             'password' => $password
-        );      
+        );
 
-        $this->User->register($newUser);
+        $this->accountExist($email, $password, $name, $newUser);
+    }
+
+    //kalo udh punya akun tapi daftar lagi
+    public function accountExist($email, $password, $name, $newUser)
+    {
+        $this->db->where('e-mail',$email);
+        $dataUser = $this->db->get('user')->row_array();
+
+        if($dataUser > 0)
+        {
+            echo "<script>
+                alert('This email is already registered! Please use another email!');
+            </script>";
+        }
+        else
+        {            
+            $this->User->register($newUser);
+        }
         redirect(base_url('welcome'),'refresh');
-
     }
 }
 ?>
