@@ -8,15 +8,14 @@ class Welcome extends CI_Controller {
 		}
 	public function index()
 	{
-		// if($account = guest)
-		// {
+		if($this->session->isLoggedin)
+		{
+			$this->load->view('header');
+		}
+		else
+		{
 			$this->load->view('header_guest');
-		// }
-		// else
-		// {
-
-		// 	$this->load->view('header');
-		// }
+        }
 		$this->load->view('home'/*, $data*/);
 		$this->load->view('footer');
 		// $data['barang'] = $this->model_kategori->data_xbox;
@@ -29,7 +28,5 @@ class Welcome extends CI_Controller {
 		// $data['dataGame'] = $this->Game->tampil_data()->result;
 		// $data['dataGame'] = $this->Game->tampil_id()->result;
 	}
-
-	
 }
 ?>
