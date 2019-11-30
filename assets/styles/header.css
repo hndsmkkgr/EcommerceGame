@@ -257,8 +257,8 @@
 	outline: none;
 	border-radius: 3px;
 	padding-left: 20px;
-} */
-/* .search_input::-webkit-input-placeholder
+}
+.search_input::-webkit-input-placeholder
 {
 	font-size: 14px !important;
 	font-weight: 400 !important;
@@ -353,7 +353,7 @@
 {
 	display: block;
 	position: relative;
-	vertical-align: middle;
+	/* vertical-align: middle; */
 }
 .page_menu_nav > li
 {

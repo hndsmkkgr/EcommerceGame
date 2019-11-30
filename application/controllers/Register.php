@@ -25,9 +25,7 @@ class Register extends CI_Controller {
         );      
 
         $this->User->register($newUser);
-        $this->load->view('header');
-        $this->load->view('home');
-        $this->load->view('footer');
+        redirect(base_url('welcome'),'refresh');
 
     }
 }

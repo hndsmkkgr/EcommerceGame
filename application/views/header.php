@@ -57,7 +57,7 @@
 										<a href="#">Account</a>
 										<ul>
 											<li><a href="<?php echo base_url();?>profile">Profile</a></li>
-											<li><a href="<?php echo base_url();?>welcome">Logout</a></li>
+											<li><a href="<?php echo base_url();?>logout">Logout</a></li>
 										</ul>
 									</li>
 									<li><a href="<?php echo base_url();?>contact">Contact</a></li>
