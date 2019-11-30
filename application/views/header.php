@@ -57,7 +57,7 @@
 							</nav>
 							<div class="header_extra ml-auto">
 								<div class="shopping_cart">
-									<a href="<?php echo base_url();?>platform/detail_keranjang">
+									<a href="<?php echo base_url();?>Cart2/">
 										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 viewBox="0 0 489 489" style="enable-background:new 0 0 489 489;" xml:space="preserve">
 											<g>
@@ -70,7 +70,7 @@
 										</svg>
 										<div> <?php $tbh_keranjang = 'Cart '.$this->cart->total_items() ?> 
 
-											<?php echo anchor('platform/detail_keranjang',      $tbh_keranjang)  ?>
+											<?php echo anchor('Cart2/', $tbh_keranjang)  ?>
 										</div>
 									</a>
 								</div>
