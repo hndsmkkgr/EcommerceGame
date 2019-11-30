@@ -8,7 +8,14 @@ class Contact extends CI_Controller {
 		}
 	public function index()
 	{
-		$this->load->view('header');
+		if($this->session->isLoggedin)
+		{
+			$this->load->view('header');
+		}
+		else
+		{
+			$this->load->view('header_guest');
+        }
 		$this->load->view('contact');
 		$this->load->view('footer');
 	}
