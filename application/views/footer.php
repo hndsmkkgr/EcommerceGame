@@ -62,24 +62,15 @@
 <!-- /* Get the modal */ -->
 
 <script>
-	var modal = document.getElementById('signup');
+	var modalSignup = document.getElementById('signup');
+	var modalLogin = document.getElementById('login');
 	window.onclick = function(event) 
 	{
-		if (event.target == modal) 
+		if (event.target == modalSignup || event.target == modalLogin) 
 		{
-    	modal.style.display = "none";
+    	modalSignup.style.display = "none";
+    	modalLogin.style.display = "none";
   		}
 	}
 /* When the user clicks anywhere outside of the modal, close it */
-</script>
-
-<script>
-	var modal = document.getElementById('login');
-	window.onclick = function(event)
-	{
-		if (event.target == modal)
-		{
-			modal.style.display = "none";
-		}
-	}
 </script>

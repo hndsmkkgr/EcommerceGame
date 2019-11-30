@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/plugins/OwlCarousel2-2.2.1/animate.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/contact_responsive.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/cart_responsive.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/categories_responsive.css">
@@ -23,7 +24,6 @@
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/main_styles.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/header.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/footer.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/plugins/OwlCarousel2-2.2.1/animate.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/responsive.css">
 </head>
 <body>
