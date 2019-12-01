@@ -7,15 +7,12 @@
 
 1. Fonts
 2. Body and some general stuff
-3. Header (terpisah)
-4. Menu (terpisah)
 5. Home
 6. Ads
 7. Products
 8. Ad Extra Large
 9. Icon Boxes
 10. Newsletter
-11. Footer (terpisah)
 
 
 ******************************/
@@ -306,9 +303,12 @@ section
 .home
 {
 	width: 100%;
-	height: 950px;
 	background: #FFFFFF;
 	z-index: 2;
+}
+#home
+{
+	height: 950px;
 }
 .home_slider_container
 {

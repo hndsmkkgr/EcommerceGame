@@ -21,6 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/checkout.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/product.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/contact.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/signupLogin.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/main_styles.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/header.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/footer.css">
@@ -56,8 +57,8 @@
 									<li class="hassubs">
 										<a href="#">Account</a>
 										<ul>
-											<li><a href="<?php echo base_url();?>profile">Profile</a></li>
-											<li><a href="<?php echo base_url();?>logout">Logout</a></li>
+											<li><a><button onclick="document.getElementById('signup').style.display='block'" style="width:auto;">Sign Up</button></a></li>
+											<li><a><button onclick="document.getElementById('login').style.display='block'" style="width:auto;">Log In</button></a></li>
 										</ul>
 									</li>
 									<li><a href="<?php echo base_url();?>contact">Contact</a></li>
@@ -157,8 +158,8 @@
 					<li class="page_menu_item has-children menu_mm">
 						<a href="<?php echo base_url();?>account">Account<i class="fa fa-angle-down"></i></a>
 						<ul class="page_menu_selection menu_mm">
-							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>profile">Profile<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>welcome">Logout<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a><button onclick="document.getElementById('signup').style.display='block'" style="width:auto;">Sign Up</button><i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a><button onclick="document.getElementById('log in').style.display='block'" style="width:auto;">Log In</button><i class="fa fa-angle-down"></i></a></li>
 						</ul>
 					</li>
 					<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>contact">Contact<i class="fa fa-angle-down"></i></a></li>
@@ -168,3 +169,62 @@
 
 		<div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
 	</div>
+
+	<!-- signup -->
+
+<div id="signup" class="modal">
+	<span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">&times;</span>
+  	<form class="modal-content" action="<?= base_url('register/registerUser') ?>" method="POST">
+    <div class="container">
+      	<h1>Sign Up</h1>
+      	<p>Please fill in this form to create an account.</p>
+      	<hr>
+      	<label for="name"><b>Full Name</b></label>
+		<input type="text" placeholder="Enter your fullname" name="name" required>
+		
+		<label for="email"><b>Email</b></label>
+      	<input type="text" placeholder="Enter Email" name="email" required>
+
+		<label for="psw"><b>Password</b></label>
+		<input type="password" placeholder="Enter Password" name="psw" required>
+<!-- 
+		<label for="psw-repeat"><b>Repeat Password</b></label>
+		<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+		 -->
+		<!-- <label>
+			<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+		</label> -->
+
+		<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+		<div class="clearfix">
+			<button type="button" onclick="document.getElementById('signup').style.display='none'" class="cancelbtn">Cancel</button>
+			<button type="submit" class="signupbtn">Sign Up</button>
+		</div>
+	</div>
+  	</form>
+</div>
+
+<div id="login" class="modal">
+	<span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+  	<form class="modal-content" action="login/loginUser" method = "POST">
+    <div class="container">
+      	<h1>Login</h1>
+      	<hr>
+      	<label for="email"><b>Email</b></label>
+      	<input type="text" placeholder="Enter Email" name="email" required>
+
+		<label for="psw"><b>Password</b></label>
+		<input type="password" placeholder="Enter Password" name="psw" required>
+<!-- 		
+		<label>
+			<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+		</label> -->
+
+		<div class="clearfix">
+			<button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+			<button type="submit" class="loginbtn">Log In</button>
+		</div>
+	</div>
+  	</form>
+</div>
