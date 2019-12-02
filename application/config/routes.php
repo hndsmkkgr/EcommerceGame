@@ -58,7 +58,11 @@ $route['PS4'] = 'PS4';
 $route['Xbox'] = 'Xbox';
 $route['Detil'] = 'Detil';
 $route['Cart2'] = 'Cart2';
-$route['Cart2'] = 'Cart2';
 $route['switch'] = 'switch';
 $route['home'] = 'home';
+$route['login'] = 'login';
+$route['signup'] = 'register';
+$route['cart'] = 'cart';
+$route['profile'] = 'profile';
+
 ?>

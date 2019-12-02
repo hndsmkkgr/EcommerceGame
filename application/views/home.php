@@ -180,10 +180,10 @@
 						<!-- Product -->
 						<div class="product">
 							<div class="product_image"><img src="assets/images/gtavThumb.jpg" alt=""></div>
-							<div class="product_extra product_hot"><a href="categories.html">Hot</a></div>
+							<div class="product_extra product_hot"><a href="#">Hot</a></div>
 							<div class="product_content">
-								<div class="product_title"><a href="product.html">GTA V</a></div>
-								<div class="product_price">$40</div>
+								<div class="product_title"><a href="#">GTA V</a></div>
+								<div class="product_price">Rp.350000</div>
 							</div>
 						</div>
 

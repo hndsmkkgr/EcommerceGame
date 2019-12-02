@@ -13,10 +13,10 @@
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
 						<div class="footer_social ml-lg-auto">
 							<ul>
-								<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href="https://pinterest.com"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+								<li><a href="https://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="https://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -24,21 +24,8 @@
 			</div>
 		</div>
     </footer>
-
-
-
-<script>
-function popup_home() {
-  alert("Thank you for subscribing to our newsletter!");
-}
-</script>
-
-<script>
-function popup_contact() {
-  alert("Thanks for contacting us, we'll reply shortly :D");
-}
-</script>
-
+</body>
+</html>
 
 
 <script src="<?php base_url();?>assets/js/jquery-3.2.1.min.js"></script>
@@ -56,8 +43,34 @@ function popup_contact() {
 <script src="<?php base_url();?>assets/js/custom.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
 <script src="<?php base_url();?>assets/js/contact.js"></script>
-</body>
-</html>
 
+<!-- subscribe -->
+<script>
+	function popup_home() {
+  	alert("Thank you for subscribing to our newsletter!");
+	}
+</script>
 
+<!-- kirim message -->
+<script>
+	function popup_contact() 
+	{
+  		alert("Thanks for contacting us, we'll reply shortly :D");
+	}
+</script>
 
+<!-- /* Get the modal */ -->
+
+<script>
+	var modalSignup = document.getElementById('signup');
+	var modalLogin = document.getElementById('login');
+	window.onclick = function(event) 
+	{
+		if (event.target == modalSignup || event.target == modalLogin) 
+		{
+    	modalSignup.style.display = "none";
+    	modalLogin.style.display = "none";
+  		}
+	}
+/* When the user clicks anywhere outside of the modal, close it */
+</script>
