@@ -223,12 +223,18 @@ span.price {
         <label>
           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
         </label>
-        <input type="submit" value="Continue to checkout" class="btn">
+        <button class="btn" onclick="myFunction()" >Continue to checkout</button> 
       </form>
     </div>
   </div>
   
 </div>
+
+<script>
+function myFunction() {
+  alert("Hello! I am an alert box!");
+}
+</script>
 
 </body>
 </html>
