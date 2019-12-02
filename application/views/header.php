@@ -41,7 +41,7 @@
 											<li><a href="<?php echo base_url();?>PS4">PS4</a></li>
 											<li><a href="<?php echo base_url();?>psvita">PS VITA</a></li>
 											<li><a href="<?php echo base_url();?>3ds">3DS</a></li>
-											<li><a href="<?php echo base_url();?>switch">SWITCH</a></li>
+											<li><a href="<?php echo base_url();?>Switch">SWITCH</a></li>
 											<li><a href="<?php echo base_url();?>Xbox">XBOX</a></li>
 										</ul>
 									</li>

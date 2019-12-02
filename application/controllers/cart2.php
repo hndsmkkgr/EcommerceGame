@@ -5,8 +5,8 @@ class Cart2 extends CI_Controller {
 
 public function index()
 	{
-		$this->load->view('header');
+		//$this->load->view('header');
 		$this->load->view('cart2');
-		$this->load->view('footer'); 
+		//$this->load->view('footer'); 
 	}
 }

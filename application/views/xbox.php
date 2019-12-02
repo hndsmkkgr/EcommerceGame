@@ -32,7 +32,7 @@
         <h5 class="card-title"><?php echo $brg->nama_brg ?></h5>
         <small><?php echo $brg->nama_brg; ?></small><br>
         <span class="badge badge-pill badge-success">Rp. <?php echo $brg->harga; ?></span><br>
-         <?php echo anchor ('PS4/keranjang/'. $brg->id_brg, '<div class="btn btn-sm btn-primary">Tambah ke Keranjang</div>') ?>
+         <?php echo anchor ('Xbox/keranjang/'. $brg->id_brg, '<div class="btn btn-sm btn-primary">Tambah ke Keranjang</div>') ?>
       </div>
     </div>
   <?php endforeach; ?>
