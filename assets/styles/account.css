@@ -64,27 +64,29 @@ ul
 	margin-top: 0px;
 	overflow: hidden;
 	background-color: #848d99;
+
 }
   
 .list 
 {
-	float: left;	
+	float: left;
+	
 }
   
 .list a 
-{
+{	
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 20px;
+	padding: 19.5px;
 	text-decoration: none;
-	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 
 }
   
 .list a:hover 
 {
 	background-color: #111111;
+	
 }
 
 p
@@ -241,79 +243,6 @@ section
 {
 	padding: 0px !important;
 }
-.button
-{
-	width: 178px;
-	height: 61px;
-	background: none;
-	text-align: center;
-	border: solid 2px #1b1b1b;
-	overflow: hidden;
-	cursor: pointer;
-}
-.button a
-{
-	display: block;
-	position: relative;
-	font-size: 16px;
-	font-weight: 600;
-	line-height: 57px;
-	color: #1b1b1b;
-	background: none;
-	z-index: 1;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.button::after
-{
-	content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150%;
-    height: 100%;
-    background: #1b1b1b;
-    z-index: 0;
-    opacity: 0;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
-    transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
-    -webkit-transform-origin: 0% 100%;
-    transform-origin: 0% 100%;
-    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
-    transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
-}
-.button:hover::after
-{
-	opacity: 1;
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-    transform: rotate3d(0, 0, 1, 0deg);
-    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-}
-.button_light
-{
-	border: solid 2px #FFFFFF;
-}
-.button_light::after
-{
-	background: #FFFFFF;
-}
-.button_light a
-{
-	color: #FFFFFF;
-}
-.button:hover a
-{
-	color: #FFFFFF;
-}
-.button_light:hover a
-{
-	color: #1b1b1b;
-}
-
 
 /*********************************
 3. Header
@@ -429,12 +358,11 @@ section
 	font-size: 24px;
 	font-weight: 600;
 	color: #1b1b1b;
-	border: 1px solid black;
-	border-top-color: #f2f4f8;
-	border-bottom-color: #0041a3;
-	border-left-color: #f2f4f8;
-	border-right-color: #f2f4f8;
-	padding-bottom: 15px;
+	border-bottom:2px solid #0041a3;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	border-left: 8px solid red;
+	
 
 }
 .section_title
@@ -442,18 +370,16 @@ section
 	font-size: 24px;
 	font-weight: 600;
 	color: #1b1b1b;
-	border: 1px solid black;
-	border-top-color: #ffffff;
-	border-bottom-color: #0041a3;
-	border-left-color: #ffffff;
-	border-right-color: #ffffff;
-	padding-bottom: 15px;
+	border-bottom:2px solid #0041a3;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	border-left: 8px solid red;
 
 }
 
 .section_subtitle
 {
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 400;
 	color: #6c6a74;
 	margin-top: 3px;
@@ -553,9 +479,31 @@ section
 	width:240px;
 	height:240px;
 	border:1px solid #e2def3;
+	border-top-color: #f2f4f8;
+	border-bottom-color: #0041a3;
+	border-left-color: #f2f4f8;
+	border-right-color: #f2f4f8;
 	padding:8px;
 }
+.edit
+{
+	width: 100%;
+	margin-top: 30px;
+	border: 2pt solid #e2def3;
+	padding: 10px;
+	background-color:rgb(14, 154, 209);
+}
+.edit:hover
+{
+	width: 100%;
+	margin-top: 30px;
+	border: 1pt solid #e2def3;
+	padding: 10px;
+	background-color:#1b1b1b;
+	color:white;
+}
 
-/*********************************
+
+/*******************************
 7. Footer
 *********************************/
