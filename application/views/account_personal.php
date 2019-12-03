@@ -1,7 +1,33 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Account - Personal Information</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Sublime project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/account.css">
+<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/account_responsive.css">
+
+</head>
+<body>
 
 <div class="super_container">
 	
+	<!-- Header -->
+
+	<?php include 'header.php' ?>
+
+	<!-- Menu -->
+
+	
+	<!-- Home -->
+
 	<br><br><br><br><br><br><br><br><br>
 
 	<!-- Account Information -->
@@ -17,6 +43,7 @@
 						<div class="section_title_profile">PROFILE</div>
 						<div class="section_subtitle">Manage your username and avatar . </div>
 						<div class="profile_list_container">
+						<form action="#" id="profile_form" class="profile_form" onsubmit="return false">
 							<ul class="profile_list">
 								<li>
 									<div class="profile_list_title">AVATAR</div>
@@ -31,14 +58,11 @@
 								</div>
 								</li>
 							</ul>
+						</form>
 						</div>	
 
-						<!-- note -->
-						<button class="edit" onclick="grayer('personal_form',false);">
-							Edit</button>
-
-						<button class="edit" onclick="grayer('personal_form',true);">
-							Save</button>
+						<button class="edit" onclick="grayerProfile('profile_form',false); changeVisibilityProfile2()">Edit</button>
+						<button class="edit" id="profile_save" style="display:none" onclick="grayerProfile('profile_form',true); changeVisibilityProfile()">Save</button>
 							
 					</div>
 				</div>
@@ -108,16 +132,12 @@
 										<option value=bahasa_indonesia selected>BAHASA INDONESIA</option>
 										<option value=english>ENGLISH</option>
 									</select>
-								</div><br>
+								</div>
+								<div class="profile_text">These personal details are are private and will not be displayed to other users. .</div>
 							</form>
 
-								<div class="profile_text">These personal details are are private and will not be displayed to other users. .</div>
-
-								<button class="edit" onclick="grayer('personal_form',false);">
-									Edit</button>
-								<button class="edit" onclick="grayer('personal_form',true);">
-									Save</button>
-
+								<button class="edit" onclick="grayer('personal_form',false); changeVisibility2()">Edit</button>
+								<button class="edit" id="save" style="display:none" onclick="grayer('personal_form',true); changeVisibility()">Save</button>
 						</div>
 						</div>
 					</div>
@@ -131,7 +151,56 @@
 
 	<!-- JavaScript-->
 
+	<script type="text/JavaScript">
+
+	/* Edit and Save Profile*/
+	
+	function grayerProfile(profile_form, yesNo) 
+	{
+  		var f = document.getElementById(profile_form);
+   		for(var i=0; i<f.length; i++) f[i].disabled = yesNo;
+	
+		window.onload=function(){grayerProfile('profile_form',true);}; // disabled by default
+	}
+
+	/* Edit and Save */
+	
+	function grayer(formId, yesNo) 
+	{
+  		var f = document.getElementById(formId);
+   		for(var i=0; i<f.length; i++) f[i].disabled = yesNo;
+	
+		window.onload=function(){grayer('personal_form',true);}; // disabled by default
+	}
+
+	/* Display Profile Button */
+
+	function changeVisibilityProfile() {
+  		document.getElementById("profile_save").style.display = "none";
+	}
+
+	function changeVisibilityProfile2() {
+		document.getElementById("profile_save").style.display = "block";
+	}
+
+	/* Display Button */
+
+	function changeVisibility() {
+  		document.getElementById("save").style.display = "none";
+	}
+
+	function changeVisibility2() {
+		document.getElementById("save").style.display = "block";
+	}
+
+
+	</script>
+	
+	<?php include 'footer.php'?>
 
 </div>
 
 <!-- <script src="<?php echo base_url('assets/js/checkout.js')?>" type="text/JavaScript"></script> -->
+
+</body>
+</html>

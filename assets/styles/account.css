@@ -358,7 +358,7 @@ section
 	font-size: 24px;
 	font-weight: 600;
 	color: #1b1b1b;
-	border-bottom:2px solid #0041a3;
+	border-bottom:2px solid #0064fa;
 	padding-bottom: 3px;
 	padding-left: 10px;
 	border-left: 8px solid red;
@@ -370,7 +370,7 @@ section
 	font-size: 24px;
 	font-weight: 600;
 	color: #1b1b1b;
-	border-bottom:2px solid #0041a3;
+	border-bottom:2px solid #0064fa;
 	padding-bottom: 3px;
 	padding-left: 10px;
 	border-left: 8px solid red;
@@ -389,11 +389,11 @@ section
 	width: 100%;
 	margin-top: 46px;
 }
-.personal_form > div:not(:last-child)
+.personal_form,.profile_form > div:not(:last-child)
 {
 	margin-bottom: 14px;
 }
-.personal_form label
+.personal_form,.profile_form label
 {
 	font-size: 14px;
 	font-weight: 400;
