@@ -13,7 +13,7 @@ public function index(){
 		{
 			$this->load->view('header_guest');
         }
-		$this->load->view('PS4',$data);
+		$this->load->view('switch',$data);
 		$this->load->view('footer');
 	} 
 }	
