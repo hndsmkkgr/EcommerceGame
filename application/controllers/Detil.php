@@ -5,7 +5,14 @@ class Detil extends CI_Controller {
 
 public function index($id_brg){
 		$this->load->model('model_barang');
-		$this->load->view('header');
+		if($this->session->isLoggedin)
+		{
+			$this->load->view('header');
+		}
+		else
+		{
+			$this->load->view('header_guest');
+        }
 		$data['tampil_detil']=$this->model_barang->tampil_id($id_brg);
 		$data['konten']="detil";
 		$this->load->view('detil',$data);

@@ -41,15 +41,14 @@
 							<div class="logo"><a href="<?php echo base_url();?>welcome">GameShop</a></div>
 							<nav class="main_nav">
 								<ul>
-									<li class="active">
+									<li>
 										<a href="<?php echo base_url();?>welcome">Home</a>
 									</li>
 									<li class="hassubs">
-										<a href="#">Platforms</a>
+										<a href="<?php echo base_url();?>platform">Platforms</a>
 										<ul>
 											<li><a href="<?php echo base_url();?>ps4">PS4</a></li>
-											<li><a href="<?php echo base_url();?>psvita">PS VITA</a></li>
-											<li><a href="<?php echo base_url();?>3ds">3DS</a></li>
+											<li><a href="<?php echo base_url();?>n3ds">3DS</a></li>
 											<li><a href="<?php echo base_url();?>switch">SWITCH</a></li>
 											<li><a href="<?php echo base_url();?>xbox">XBOX</a></li>
 										</ul>
@@ -66,7 +65,7 @@
 							</nav>
 							<div class="header_extra ml-auto">
 								<div class="shopping_cart">
-									<a href="<?php echo base_url();?>cart">
+									<a href="<?php echo base_url();?>cart2">
 										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 viewBox="0 0 489 489" style="enable-background:new 0 0 489 489;" xml:space="preserve">
 											<g>
@@ -77,7 +76,9 @@
 													c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h45.2l26.9,302.3C412.8,445.2,392.1,462,366.8,462z"/>
 											</g>
 										</svg>
-										<div>Cart <span>(0)</span></div>
+										<div> <?php $tbh_keranjang = 'Cart '.$this->cart->total_items() ?> 
+											<?php echo anchor('login/', $tbh_keranjang)  ?>
+										</div>
 									</a>
 								</div>
 								<div class="search">
@@ -141,7 +142,7 @@
 						<a href="<?php echo base_url();?>welcome">Home<i class="fa fa-angle-down"></i></a>
 						<ul class="page_menu_selection menu_mm">
 							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>platform">Platform<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>account">Account<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="">Account<i class="fa fa-angle-down"></i></a></li>
 							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>contact">Contact<i class="fa fa-angle-down"></i></a></li>
 						</ul>
 					</li>
@@ -149,14 +150,13 @@
 						<a href="<?php echo base_url();?>platform">Platform<i class="fa fa-angle-down"></i></a>
 						<ul class="page_menu_selection menu_mm">
 							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>ps4">PS4<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>psvita">PS VITA<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>3ds">3DS<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>n3ds">3DS<i class="fa fa-angle-down"></i></a></li>
 							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>switch">SWITCH<i class="fa fa-angle-down"></i></a></li>
 							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>xbox">XBOX<i class="fa fa-angle-down"></i></a></li>
 						</ul>
 					</li>
 					<li class="page_menu_item has-children menu_mm">
-						<a href="<?php echo base_url();?>account">Account<i class="fa fa-angle-down"></i></a>
+						<a href="">Account<i class="fa fa-angle-down"></i></a>
 						<ul class="page_menu_selection menu_mm">
 							<li class="page_menu_item menu_mm"><a><button onclick="document.getElementById('signup').style.display='block'" style="width:auto;">Sign Up</button><i class="fa fa-angle-down"></i></a></li>
 							<li class="page_menu_item menu_mm"><a><button onclick="document.getElementById('log in').style.display='block'" style="width:auto;">Log In</button><i class="fa fa-angle-down"></i></a></li>
@@ -187,13 +187,6 @@
 
 		<label for="psw"><b>Password</b></label>
 		<input type="password" placeholder="Enter Password" name="psw" required>
-<!-- 
-		<label for="psw-repeat"><b>Repeat Password</b></label>
-		<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-		 -->
-		<!-- <label>
-			<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-		</label> -->
 
 		<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
@@ -216,10 +209,7 @@
 
 		<label for="psw"><b>Password</b></label>
 		<input type="password" placeholder="Enter Password" name="psw" required>
-<!-- 		
-		<label>
-			<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-		</label> -->
+
 
 		<div class="clearfix">
 			<button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>

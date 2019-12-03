@@ -103,8 +103,8 @@
 						</div>
 					</div>
 					<div class="avds_small_content">
-						<div class="avds_title">PC Games</div>
-						<div class="avds_link"><a href="categories.html">See More</a></div>
+						<div class="avds_title">Xbox Games</div>
+						<div class="avds_link"><a href="<?php echo base_url();?>xbox">See More</a></div>
 					</div>
 				</div>
 			</div>
@@ -114,7 +114,7 @@
 					<div class="avds_large_content">
 						<div class="avds_title">Nintendo Switch Games</div>
 						<div class="avds_text">Buy new games now.</div>
-						<div class="avds_link avds_link_large"><a href="categories.html">See More</a></div>
+						<div class="avds_link avds_link_large"><a href="<?php echo base_url();?>switch">See More</a></div>
 					</div>
 				</div>
 			</div>
@@ -224,7 +224,7 @@
 						<div class="avds_xl_content">
 							<div class="avds_title">Amazing Offers!</div>
 							<div class="avds_text">Check it out!<br/>Only available until December 31, 2019.</div>
-							<div class="avds_link avds_xl_link"><a href="categories.html">See More</a></div>
+							<div class="avds_link avds_xl_link"><a href="<?php echo base_url();?>platform">See More</a></div>
 						</div>
 					</div>
 				</div>

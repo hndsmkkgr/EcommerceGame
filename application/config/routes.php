@@ -56,5 +56,10 @@ $route['contact'] = 'contact';
 $route['login'] = 'login';
 $route['signup'] = 'register';
 $route['cart'] = 'cart';
-$route['profile'] = 'profile';
+$route['account'] = 'account';
+$route['details'] = 'detil';
+$route['PS4'] = 'ps4';
+$route['xbox'] = 'xbox';
+$route['switch'] = 'switch';
+$route['3ds'] = 'n3ds';
 ?>

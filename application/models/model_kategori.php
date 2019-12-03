@@ -5,12 +5,12 @@ class Model_kategori extends CI_Model{
 		return $this->db->get_where("produk",array('kategori' => 'PS 4'));
 	}
 
-	public function data_PC(){
-		return $this->db->get_where("produk",array('kategori' => 'PC'));
+	public function data_3DS(){
+		return $this->db->get_where("produk",array('kategori' => '3DS'));
 	}
 
 	public function data_xbox(){
-		return $this->db->get_where("produk",array('kategori' => 'xbox'));
+		return $this->db->get_where("produk",array('kategori' => 'XBOX'));
 	}
 
 	public function data_switch(){

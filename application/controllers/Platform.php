@@ -13,19 +13,17 @@ class Platform extends CI_Controller {
 
 	public function index(){
 	$data['barang'] = $this->model_barang->tampil_data()->result();
-		$this->load->view('header');
+		if($this->session->isLoggedin)
+		{
+			$this->load->view('header');
+		}
+		else
+		{
+			$this->load->view('header_guest');
+        }
 		$this->load->view('platforms',$data);
 		$this->load->view('footer');
 
-	}
-
-	public function Detil($id_brg){
-		$this->load->model('model_barang');
-		$this->load->view('header');
-		$data['tampil_detil']=$this->model_barang->tampil_id($id_brg);
-		$data['konten']="detil";
-		$this->load->view('detil',$data);
-		$this->load->view('footer');
 	}
 
 	public function keranjang($id)
@@ -47,12 +45,28 @@ class Platform extends CI_Controller {
 
 	public function detail_keranjang()
 	{
-		$this->load->view('header');
+		if($this->session->isLoggedin)
+		{
+			$this->load->view('header');
+		}
+		else
+		{
+			$this->load->view('header_guest');
+        }
 		$this->load->view('cart');
 		$this->load->view('footer'); 
 	}
 
-	
+    public function cekLogin()
+    {
+		if($this->session->isLoggedin == false)
+		{
+			echo "<script>
+                alert('Please log in before purchasing');
+			</script>";
+			redirect(base_url('welcome'),'refresh');
+		}
+    }
 
 	
 
