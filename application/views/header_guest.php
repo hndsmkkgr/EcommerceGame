@@ -141,7 +141,7 @@
 						<a href="<?php echo base_url();?>welcome">Home<i class="fa fa-angle-down"></i></a>
 						<ul class="page_menu_selection menu_mm">
 							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>platform">Platform<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>account">Account<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="">Account<i class="fa fa-angle-down"></i></a></li>
 							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>contact">Contact<i class="fa fa-angle-down"></i></a></li>
 						</ul>
 					</li>
@@ -156,7 +156,7 @@
 						</ul>
 					</li>
 					<li class="page_menu_item has-children menu_mm">
-						<a href="<?php echo base_url();?>account">Account<i class="fa fa-angle-down"></i></a>
+						<a href="">Account<i class="fa fa-angle-down"></i></a>
 						<ul class="page_menu_selection menu_mm">
 							<li class="page_menu_item menu_mm"><a><button onclick="document.getElementById('signup').style.display='block'" style="width:auto;">Sign Up</button><i class="fa fa-angle-down"></i></a></li>
 							<li class="page_menu_item menu_mm"><a><button onclick="document.getElementById('log in').style.display='block'" style="width:auto;">Log In</button><i class="fa fa-angle-down"></i></a></li>

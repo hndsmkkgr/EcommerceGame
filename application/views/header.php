@@ -44,19 +44,21 @@
 										<a href="<?php echo base_url();?>welcome">Home</a>
 									</li>
 									<li class="hassubs">
+<<<<<<< HEAD
 										<a href="<?php echo base_url();?>Platform">Platforms</a>
+=======
+										<a href="<?php echo base_url();?>platform">Platforms</a>
+>>>>>>> 86bbf7783b986a200805e4ee1bf2f1d26e06efee
 										<ul>
 											<li><a href="<?php echo base_url();?>PS4">PS4</a></li>
 											<li><a href="<?php echo base_url();?>psvita">PS VITA</a></li>
 											<li><a href="<?php echo base_url();?>3ds">3DS</a></li>
-
-											<li><a href="<?php echo base_url();?>Switch">SWITCH</a></li>
-											<li><a href="<?php echo base_url();?>Xbox">XBOX</a></li>
-
+											<li><a href="<?php echo base_url();?>switch">SWITCH</a></li>
+											<li><a href="<?php echo base_url();?>xbox">XBOX</a></li>
 										</ul>
 									</li>
 									<li class="hassubs">
-										<a href="#">Account</a>
+										<a href="<?php echo base_url();?>profile">Account</a>
 										<ul>
 											<li><a href="<?php echo base_url();?>profile">Profile</a></li>
 											<li><a href="<?php echo base_url();?>logout">Logout</a></li>
@@ -67,9 +69,7 @@
 							</nav>
 							<div class="header_extra ml-auto">
 								<div class="shopping_cart">
-
-									<a href="<?php echo base_url();?>Cart2/">
-
+									<a href="<?php echo base_url();?>cart">
 										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 viewBox="0 0 489 489" style="enable-background:new 0 0 489 489;" xml:space="preserve">
 											<g>
@@ -80,11 +80,7 @@
 													c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h45.2l26.9,302.3C412.8,445.2,392.1,462,366.8,462z"/>
 											</g>
 										</svg>
-
-										<div> <?php $tbh_keranjang = 'Cart '.$this->cart->total_items() ?> 
-											<?php echo anchor('Cart2/', $tbh_keranjang)  ?>
-										</div>
-
+										<div>Cart <span>(0)</span></div>
 									</a>
 								</div>
 								<div class="search">
@@ -147,8 +143,13 @@
 					<li class="page_menu_item has-children menu_mm">
 						<a href="<?php echo base_url();?>welcome">Home<i class="fa fa-angle-down"></i></a>
 						<ul class="page_menu_selection menu_mm">
+<<<<<<< HEAD
 							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>Platform">Platform<i class="fa fa-angle-down"></i></a></li>
 							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>account">Account<i class="fa fa-angle-down"></i></a></li>
+=======
+							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>platform">Platform<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>profile">Account<i class="fa fa-angle-down"></i></a></li>
+>>>>>>> 86bbf7783b986a200805e4ee1bf2f1d26e06efee
 							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>contact">Contact<i class="fa fa-angle-down"></i></a></li>
 						</ul>
 					</li>
@@ -163,7 +164,7 @@
 						</ul>
 					</li>
 					<li class="page_menu_item has-children menu_mm">
-						<a href="<?php echo base_url();?>account">Account<i class="fa fa-angle-down"></i></a>
+						<a href="<?php echo base_url();?>profile">Account<i class="fa fa-angle-down"></i></a>
 						<ul class="page_menu_selection menu_mm">
 							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>profile">Profile<i class="fa fa-angle-down"></i></a></li>
 							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>welcome">Logout<i class="fa fa-angle-down"></i></a></li>
