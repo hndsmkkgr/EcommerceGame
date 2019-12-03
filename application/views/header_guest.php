@@ -45,7 +45,7 @@
 										<a href="<?php echo base_url();?>welcome">Home</a>
 									</li>
 									<li class="hassubs">
-										<a href="#">Platforms</a>
+										<a href="<?php echo base_url();?>platform">Platforms</a>
 										<ul>
 											<li><a href="<?php echo base_url();?>ps4">PS4</a></li>
 											<li><a href="<?php echo base_url();?>psvita">PS VITA</a></li>
