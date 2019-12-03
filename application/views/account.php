@@ -1,33 +1,7 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Account</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Sublime project">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/account.css">
-<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/account_responsive.css">
-
-</head>
-<body>
 
 <div class="super_container">
 	
-	<!-- Header -->
-
-	<?php include 'header.php' ?>
-
-	<!-- Menu -->
-
-	
-	<!-- Home -->
-
 	<br><br><br><br><br><br><br><br><br>
 
 	<!-- Account Information -->
@@ -148,22 +122,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<!-- JavaScript-->
 
-	<script type="text/JavaScript">
-	
-	function grayer(formId, yesNo) 
-	{
-  		var f = document.getElementById(formId);
-   		for(var i=0; i<f.length; i++) f[i].disabled = yesNo;
-	
-		window.onload=function(){grayer('personal_form',true);}; // disabled by default
-	}
-	</script>
-	
-	<?php include 'footer.php'?>
 
 </div>
 
 <!-- <script src="<?php echo base_url('assets/js/checkout.js')?>" type="text/JavaScript"></script> -->
-
-</body>
-</html>

@@ -39,6 +39,7 @@
 								<div class="product_price">Rp. <?php echo $brg->harga; ?></div>
                 <br/>
                 <?php echo anchor ('platform/keranjang/'. $brg->id_brg, '<div class="btn btn-sm btn-primary">Add to Cart</div>') ?>
+
 							</div>
 						</div>
 

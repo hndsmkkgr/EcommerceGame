@@ -74,3 +74,14 @@
 	}
 /* When the user clicks anywhere outside of the modal, close it */
 </script>
+
+<script type="text/JavaScript">
+	
+	function grayer(formId, yesNo) 
+	{
+  		var f = document.getElementById(formId);
+   		for(var i=0; i<f.length; i++) f[i].disabled = yesNo;
+	
+		window.onload=function(){grayer('personal_form',true);}; // disabled by default
+	}
+</script>

@@ -25,19 +25,17 @@
 
   <div class="row"style="margin-right: 10px; margin-left: 7rem;">
     <?php foreach ($barang as $brg) : ?> 
-     <div class="card" style="width: 18rem; margin-right: 25px; margin-bottom: 25px;">
-      <div style=""> 
-        <a href="<?= base_url()?>detil/<?= $brg->id_brg;?>">
-          <img src="<?php echo base_url().'/upload/'.$brg->gambar ?>" class="card-img-top" alt="" style="float:left;  max-height: 13rem;">
-        </a>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title"><?php echo $brg->nama_brg ?></h5>
-        <small><?php echo $brg->nama_brg; ?></small><br>
-        <span class="badge badge-pill badge-success">Rp. <?php echo $brg->harga; ?></span><br>
-         <?php echo anchor ('platform/keranjang/'. $brg->id_brg, '<div class="btn btn-sm btn-primary">Add to Cart</div>') ?>
-      </div>
-    </div>
+      <div class="product">
+							<div class="product_image"><img src="<?php echo base_url().'/upload/'.$brg->gambar?>" alt=""></div>
+							<div class="product_extra product_new"><a href="<?= base_url()?>detil/<?= $brg->id_brg;?>">New</a></div>
+							<div class="product_content">
+								<div class="product_title"><a href="<?= base_url()?>detil/<?= $brg->id_brg;?>"><?php echo $brg->nama_brg ?></a></div>
+								<div class="product_price">Rp. <?php echo $brg->harga; ?></div>
+                <br/>
+                <?php echo anchor ('platform/keranjang/'. $brg->id_brg, '<div class="btn btn-sm btn-primary">Add to Cart</div>') ?>
+
+							</div>
+						</div>
   <?php endforeach; ?>
   </div>
 </div>

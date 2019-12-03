@@ -57,7 +57,16 @@ class Platform extends CI_Controller {
 		$this->load->view('footer'); 
 	}
 
-	
+    public function cekLogin()
+    {
+		if($this->session->isLoggedin == false)
+		{
+			echo "<script>
+                alert('Please log in before purchasing');
+			</script>";
+			redirect(base_url('welcome'),'refresh');
+		}
+    }
 
 	
 
