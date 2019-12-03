@@ -13,7 +13,14 @@ class Platform extends CI_Controller {
 
 	public function index(){
 	$data['barang'] = $this->model_barang->tampil_data()->result();
-		$this->load->view('header');
+		if($this->session->isLoggedin)
+		{
+			$this->load->view('header');
+		}
+		else
+		{
+			$this->load->view('header_guest');
+        }
 		$this->load->view('platforms',$data);
 		$this->load->view('footer');
 
@@ -38,7 +45,14 @@ class Platform extends CI_Controller {
 
 	public function detail_keranjang()
 	{
-		$this->load->view('header');
+		if($this->session->isLoggedin)
+		{
+			$this->load->view('header');
+		}
+		else
+		{
+			$this->load->view('header_guest');
+        }
 		$this->load->view('cart');
 		$this->load->view('footer'); 
 	}
