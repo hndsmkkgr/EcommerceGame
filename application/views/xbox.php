@@ -40,29 +40,20 @@
 </div>
 </div>
  
-  <!-- Newsletter -->
-
-  <div class="newsletter">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="newsletter_border"></div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-          <div class="newsletter_content text-center">
-            <div class="newsletter_title">Subscribe to our newsletter</div>
-            <div class="newsletter_text"><p>Please write your e-mail below</p></div>
-            <div class="newsletter_form_container">
-              <form action="#" id="newsletter_form" class="newsletter_form">
-                <input type="email" class="newsletter_input" required="required">
-                <button class="newsletter_button trans_200"><span>Subscribe</span></button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="avds_xl">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="avds_xl_container clearfix">
+						<div class="avds_xl_background" style="background-image:url(assets/images/offer.jpg)"></div>
+						<div class="avds_xl_content">
+							<div class="avds_title">Amazing Offers!</div>
+							<div class="avds_text">Check it out!<br/>Only available until December 31, 2019.</div>
+							<div class="avds_link avds_xl_link"><a href="categories.html">See More</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
