@@ -52,7 +52,7 @@
 						<div class="avds_xl_content">
 							<div class="avds_title">Amazing Offers!</div>
 							<div class="avds_text">Check it out!<br/>Only available until December 31, 2019.</div>
-							<div class="avds_link avds_xl_link"><a href="categories.html">See More</a></div>
+							<div class="avds_link avds_xl_link"><a href="<?php echo base_url();?>platform">See More</a></div>
 						</div>
 					</div>
 				</div>

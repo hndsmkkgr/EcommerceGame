@@ -41,7 +41,7 @@
 							<div class="logo"><a href="<?php echo base_url();?>welcome">GameShop</a></div>
 							<nav class="main_nav">
 								<ul>
-									<li class="active">
+									<li>
 										<a href="<?php echo base_url();?>welcome">Home</a>
 									</li>
 									<li class="hassubs">
@@ -148,11 +148,11 @@
 					<li class="page_menu_item has-children menu_mm">
 						<a href="<?php echo base_url();?>platform">Platform<i class="fa fa-angle-down"></i></a>
 						<ul class="page_menu_selection menu_mm">
-							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>PS4">PS4<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>ps4">PS4<i class="fa fa-angle-down"></i></a></li>
 							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>psvita">PS VITA<i class="fa fa-angle-down"></i></a></li>
 							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>3ds">3DS<i class="fa fa-angle-down"></i></a></li>
 							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>switch">SWITCH<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>Xbox">XBOX<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>xbox">XBOX<i class="fa fa-angle-down"></i></a></li>
 						</ul>
 					</li>
 					<li class="page_menu_item has-children menu_mm">
