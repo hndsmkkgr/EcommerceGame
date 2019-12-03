@@ -2,14 +2,14 @@
 
 <div class="home" style="margin-top: 50px">
     <div class="home_container">
-      <div class="home_background" style="background-image:url(assets/images/categories.jpg)"></div>
+      <div class="home_background" style="background-image:url(assets/images/platform.jpg)"></div>
       <div class="home_content_container">
         <div class="container">
           <div class="row">
             <div class="col">
               <div class="home_content">
-                <div class="home_title">Find Yours Game<span>.</span></div>
-                <div class="home_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viverra velit venenatis fermentum luctus.</p></div>
+                <div class="home_title">Find Your Game<span>.</span></div>
+                <div class="home_text"><p>Get just the right game to satisfy your boredom.</p></div>
               </div>
             </div>
           </div>
@@ -42,6 +42,23 @@
   </div>
 </div>
 </div>
+
+<div class="avds_xl">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="avds_xl_container clearfix">
+						<div class="avds_xl_background" style="background-image:url(assets/images/offer.jpg)"></div>
+						<div class="avds_xl_content">
+							<div class="avds_title">Amazing Offers!</div>
+							<div class="avds_text">Check it out!<br/>Only available until December 31, 2019.</div>
+							<div class="avds_link avds_xl_link"><a href="<?php echo base_url();?>platform">See More</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
