@@ -27,7 +27,7 @@
     <?php foreach ($barang as $brg) : ?> 
      <div class="card" style="width: 18rem; margin-right: 25px; margin-bottom: 25px;">
       <div style=""> 
-        <a href="<?= base_url()?>platform/Detil<?= $brg->id_brg;?>">
+        <a href="<?= base_url()?>detil/<?= $brg->id_brg;?>">
           <img src="<?php echo base_url().'/upload/'.$brg->gambar ?>" class="card-img-top" alt="" style="float:left;  max-height: 13rem;">
         </a>
       </div>
