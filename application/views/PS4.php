@@ -31,7 +31,7 @@
             <div class="product">
                 <div class="product_image"><img src="<?php echo base_url().'/upload/'.$brg->gambar?>" alt=""></div>
                 <div class="product_content">
-                <div class="product_title"><a href="<?= base_url()?>detil/<?= $brg->id_brg;?>"><?php echo $brg->nama_brg ?></a></div>
+                <div class="product_title"><a href="<?= base_url()?>Detil/index/<?= $brg->id_brg;?>"><?php echo $brg->nama_brg ?></a></div>
                 <div class="product_type"><?php echo $brg->kategori ?></a></div>
                 <div class="product_price">Rp. <?php echo $brg->harga; ?></div>
                 <br/>
