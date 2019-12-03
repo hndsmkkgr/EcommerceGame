@@ -53,16 +53,13 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['contact'] = 'contact';
-$route['platform'] = 'platform';
-$route['PS4'] = 'PS4';
-$route['Xbox'] = 'Xbox';
-$route['Detil'] = 'Detil';
-$route['Cart2'] = 'Cart2';
-$route['switch'] = 'switch';
-$route['home'] = 'home';
 $route['login'] = 'login';
 $route['signup'] = 'register';
 $route['cart'] = 'cart';
-$route['profile'] = 'profile';
-
+$route['account'] = 'account';
+$route['details'] = 'detil';
+$route['PS4'] = 'ps4';
+$route['xbox'] = 'xbox';
+$route['switch'] = 'switch';
+$route['3ds'] = 'n3ds';
 ?>
