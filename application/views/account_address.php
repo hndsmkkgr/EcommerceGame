@@ -43,6 +43,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="section_title_profile">PROFILE</div>
 						<div class="section_subtitle">Manage your username and avatar . </div>
 						<div class="profile_list_container">
+						<form action="#" id="profile_form" class="profile_form" onsubmit="return false">
 							<ul class="profile_list">
 								<li>
 									<div class="profile_list_title">AVATAR</div>
@@ -57,14 +58,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</div>
 								</li>
 							</ul>
+						</form>
 						</div>	
 
-						<!-- note -->
-						<button class="edit" onclick="grayer('personal_form',false);">
-							Edit</button>
-
-						<button class="edit" onclick="grayer('personal_form',true);">
-							Save</button>
+						<button class="edit" onclick="grayerProfile('profile_form',false); changeVisibilityProfile2()">Edit</button>
+						<button class="edit" id="profile_save" style="display:none" onclick="grayerProfile('profile_form',true); changeVisibilityProfile()">Save</button>
 							
 					</div>
 				</div>
@@ -134,16 +132,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										<option value=bahasa_indonesia selected>BAHASA INDONESIA</option>
 										<option value=english>ENGLISH</option>
 									</select>
-								</div><br>
+								</div>
+								<div class="profile_text">These personal details are are private and will not be displayed to other users. .</div>
 							</form>
 
-								<div class="profile_text">These personal details are are private and will not be displayed to other users. .</div>
-
-								<button class="edit" onclick="grayer('personal_form',false);">
-									Edit</button>
-								<button class="edit" onclick="grayer('personal_form',true);">
-									Save</button>
-
+								<button class="edit" onclick="grayer('personal_form',false); changeVisibility2()">Edit</button>
+								<button class="edit" id="save" style="display:none" onclick="grayer('personal_form',true); changeVisibility()">Save</button>
 						</div>
 						</div>
 					</div>
@@ -158,6 +152,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!-- JavaScript-->
 
 	<script type="text/JavaScript">
+
+	/* Edit and Save Profile*/
+	
+	function grayerProfile(profile_form, yesNo) 
+	{
+  		var f = document.getElementById(profile_form);
+   		for(var i=0; i<f.length; i++) f[i].disabled = yesNo;
+	
+		window.onload=function(){grayerProfile('profile_form',true);}; // disabled by default
+	}
+
+	/* Edit and Save */
 	
 	function grayer(formId, yesNo) 
 	{
@@ -166,6 +172,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	
 		window.onload=function(){grayer('personal_form',true);}; // disabled by default
 	}
+
+	/* Display Profile Button */
+
+	function changeVisibilityProfile() {
+  		document.getElementById("profile_save").style.display = "none";
+	}
+
+	function changeVisibilityProfile2() {
+		document.getElementById("profile_save").style.display = "block";
+	}
+
+	/* Display Button */
+
+	function changeVisibility() {
+  		document.getElementById("save").style.display = "none";
+	}
+
+	function changeVisibility2() {
+		document.getElementById("save").style.display = "block";
+	}
+
+
 	</script>
 	
 	<?php include 'footer.php'?>
