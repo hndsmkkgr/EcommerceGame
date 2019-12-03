@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Xbox extends CI_Controller {
 
+//ini juga jangan
 public function index(){
 		$data['barang'] = $this->model_kategori->data_xbox()->result();
 		if($this->session->isLoggedin)
@@ -17,6 +18,8 @@ public function index(){
 		$this->load->view('footer');
 	} 
 
+
+//ini jangan dirubah
 public function keranjang($id)
 	{
 		$barang = $this->model_barang->find($id);
