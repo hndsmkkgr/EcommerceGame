@@ -13,7 +13,7 @@ $config['base_url'] = 'http://localhost/gameshop/'; //ini diisi link project kit
 | variable so that it is blank.
 |
 */
-$config['index_page'] = '';
+$config['index_page'] = 'index.php';
 
 /*
 |--------------------------------------------------------------------------
