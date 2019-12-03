@@ -49,8 +49,7 @@
 										<a href="<?php echo base_url();?>platform">Platforms</a>
 										<ul>
 											<li><a href="<?php echo base_url();?>ps4">PS4</a></li>
-											<li><a href="<?php echo base_url();?>psvita">PS VITA</a></li>
-											<li><a href="<?php echo base_url();?>3ds">3DS</a></li>
+											<li><a href="<?php echo base_url();?>n3ds">3DS</a></li>
 											<li><a href="<?php echo base_url();?>switch">SWITCH</a></li>
 											<li><a href="<?php echo base_url();?>xbox">XBOX</a></li>
 										</ul>
@@ -150,8 +149,7 @@
 						<a href="<?php echo base_url();?>platform">Platform<i class="fa fa-angle-down"></i></a>
 						<ul class="page_menu_selection menu_mm">
 							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>ps4">PS4<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>psvita">PS VITA<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>3ds">3DS<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>n3ds">3DS<i class="fa fa-angle-down"></i></a></li>
 							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>switch">SWITCH<i class="fa fa-angle-down"></i></a></li>
 							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>xbox">XBOX<i class="fa fa-angle-down"></i></a></li>
 						</ul>
