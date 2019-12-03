@@ -1,14 +1,14 @@
 
 <div class="home" style="margin-top: 50px">
     <div class="home_container">
-      <div class="home_background" style="background-image:url(assets/images/categories.jpg)"></div>
+      <div class="home_background" style="background-image:url(assets/images/platform.jpg)"></div>
       <div class="home_content_container">
         <div class="container">
           <div class="row">
             <div class="col">
               <div class="home_content">
-                <div class="home_title">Find Yours Game<span>.</span></div>
-                <div class="home_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viverra velit venenatis fermentum luctus.</p></div>
+                <div class="home_title">Find Your Game<span>.</span></div>
+                <div class="home_text"><p>Get just the right game to satisfy your boredom.</p></div>
               </div>
             </div>
           </div>
@@ -39,6 +39,7 @@
   </div>
 </div>
 </div>
+
  
   <!-- Newsletter -->
 
@@ -53,7 +54,7 @@
         <div class="col-lg-8 offset-lg-2">
           <div class="newsletter_content text-center">
             <div class="newsletter_title">Subscribe to our newsletter</div>
-            <div class="newsletter_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros</p></div>
+            <div class="newsletter_text"><p>Please write your e-mail below</p></div>
             <div class="newsletter_form_container">
               <form action="#" id="newsletter_form" class="newsletter_form">
                 <input type="email" class="newsletter_input" required="required">
