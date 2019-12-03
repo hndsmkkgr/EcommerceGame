@@ -16,4 +16,20 @@ public function index(){
 		$this->load->view('switch',$data);
 		$this->load->view('footer');
 	} 
+
+	public function keranjang($id)
+	{
+		$barang = $this->model_barang->find($id);
+		
+		$data = array(
+        'id'      => $barang->id_brg,
+        'qty'     => 1,
+        'price'   => $barang->harga,
+        'name'    => $barang->nama_brg
+        
+		);
+
+		$this->cart->insert($data);
+		redirect('Switch');
+	}
 }	
