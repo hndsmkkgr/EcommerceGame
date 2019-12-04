@@ -29,8 +29,8 @@
 
             <?php foreach ($barang as $brg) : ?> 
             <div class="product">
-                <div class="product_image"><img src="<?php echo base_url().'/upload/'.$brg->gambar?>" alt=""></div>
-                <?php if($brg->id_brg == 4)
+            <a href="<?= base_url()?>Product/index/<?= $brg->id_brg;?>"><div class="product_image"><img src="<?php echo base_url().'/upload/'.$brg->gambar?>" alt=""></div></a>
+            <?php if($brg->id_brg == 4)
                 {
                   echo '<div class="product_extra product_hot"><a href="#">Hot</a></div>';
                 }
