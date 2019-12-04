@@ -16,6 +16,8 @@
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/categories_responsive.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/checkout_responsive.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/product_responsive.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/account.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/account_responsive.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/cart.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/categories.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/checkout.css">
@@ -40,25 +42,22 @@
 							<div class="logo"><a href="<?php echo base_url();?>welcome">GameShop</a></div>
 							<nav class="main_nav">
 								<ul>
-									<li class="active">
+									<li>
 										<a href="<?php echo base_url();?>welcome">Home</a>
 									</li>
 									<li class="hassubs">
-										<a href="#">Platforms</a>
+										<a href="<?php echo base_url();?>platform">Platforms</a>
 										<ul>
-											<li><a href="<?php echo base_url();?>PS4">PS4</a></li>
-											<li><a href="<?php echo base_url();?>psvita">PS VITA</a></li>
-											<li><a href="<?php echo base_url();?>3ds">3DS</a></li>
-
-											<li><a href="<?php echo base_url();?>Switch">SWITCH</a></li>
-											<li><a href="<?php echo base_url();?>Xbox">XBOX</a></li>
-
+											<li><a href="<?php echo base_url();?>ps4">PS4</a></li>
+											<li><a href="<?php echo base_url();?>n3ds">3DS</a></li>
+											<li><a href="<?php echo base_url();?>nswitch">SWITCH</a></li>
+											<li><a href="<?php echo base_url();?>xbox">XBOX</a></li>
 										</ul>
 									</li>
 									<li class="hassubs">
-										<a href="#">Account</a>
+										<a href="<?php echo base_url();?>account">Account</a>
 										<ul>
-											<li><a href="<?php echo base_url();?>profile">Profile</a></li>
+											<li><a href="<?php echo base_url();?>account">Profile</a></li>
 											<li><a href="<?php echo base_url();?>logout">Logout</a></li>
 										</ul>
 									</li>
@@ -67,22 +66,18 @@
 							</nav>
 							<div class="header_extra ml-auto">
 								<div class="shopping_cart">
-
-									<a href="<?php echo base_url();?>Cart2/">
-
+									<a href="<?php echo base_url();?>cart2">
 										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 viewBox="0 0 489 489" style="enable-background:new 0 0 489 489;" xml:space="preserve">
 											<g>
 												<path d="M440.1,422.7l-28-315.3c-0.6-7-6.5-12.3-13.4-12.3h-57.6C340.3,42.5,297.3,0,244.5,0s-95.8,42.5-96.6,95.1H90.3
 													c-7,0-12.8,5.3-13.4,12.3l-28,315.3c0,0.4-0.1,0.8-0.1,1.2c0,35.9,32.9,65.1,73.4,65.1h244.6c40.5,0,73.4-29.2,73.4-65.1
-													C440.2,423.5,440.2,423.1,440.1,422.7z M244.5,27c37.9,0,68.8,30.4,69.6,68.1H174.9C175.7,57.4,206.6,27,244.5,27z M366.8 6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h45.2l26.9,302.3C412.8,445.2,392.1,462,366.8,462z"/>
+													C440.2,423.5,440.2,423.1,440.1,422.7z M244.5,27c37.9,0,68.8,30.4,69.6,68.1H174.9C175.7,57.4,206.6,27,244.5,27z M366.8,462
+													H122.2c-25.4,0-46-16.8-46.4-37.5l26.8-302.3h45.2v41c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h139.3v41
+													c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h45.2l26.9,302.3C412.8,445.2,392.1,462,366.8,462z"/>
 											</g>
 										</svg>
-
-										<div> <?php $tbh_keranjang = 'Cart '.$this->cart->total_items() ?> 
-											<?php echo anchor('Cart2/', $tbh_keranjang)  ?>
-										</div>
-
+										<div>Cart <span>(0)</span></div>
 									</a>
 								</div>
 								<div class="search">
@@ -155,7 +150,7 @@
 						<ul class="page_menu_selection menu_mm">
 							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>ps4">PS4<i class="fa fa-angle-down"></i></a></li>
 							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>n3ds">3DS<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>switch">SWITCH<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>nswitch">SWITCH<i class="fa fa-angle-down"></i></a></li>
 							<li class="page_menu_item menu_mm"><a href="<?php echo base_url();?>xbox">XBOX<i class="fa fa-angle-down"></i></a></li>
 						</ul>
 					</li>
