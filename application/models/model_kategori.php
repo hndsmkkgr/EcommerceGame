@@ -2,7 +2,7 @@
 
 class Model_kategori extends CI_Model{
 	public function data_PS4(){
-		return $this->db->get_where("produk",array('kategori' => 'PS 4'));
+		return $this->db->get_where("produk",array('kategori' => 'PS4'));
 	}
 
 	public function data_3DS(){
@@ -14,7 +14,7 @@ class Model_kategori extends CI_Model{
 	}
 
 	public function data_switch(){
-		return $this->db->get_where("produk",array('kategori' => 'switch'));
+		return $this->db->get_where("produk",array('kategori' => 'Switch'));
 	}
 
 	
