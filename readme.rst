@@ -27,6 +27,10 @@ TUBES WEB: GAMESHOP
 	
 	-Untuk memasukkan barang ke cart pengguna tinggal menekan tombol add to cart
 	
-	-Pengguna dapat mengedit (jumlah) barang yang dibelinya pada laman cart
+	-Pengguna dapat mengosongkan cart dengan menekan tombol clear cart
 	
 	-untuk membeli barang pengguna tinggal melakukan checkout dengan menekan tombol checkout
+	
+	-Dalam checkout pengguna dapat memilih salah satu metode pembayaran antara lain Paypal, bank transfer, dan credit card
+	
+	-untuk konfirmasi pembelian tinggal klik Place Order
