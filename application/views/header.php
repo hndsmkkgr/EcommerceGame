@@ -78,7 +78,7 @@
 											</g>
 										</svg>
 										<div> <?php $tbh_keranjang = '<span>Cart(' .$this->cart->total_items() .')</span>'?>
-										<?php echo anchor('Cart2/', $tbh_keranjang)?>
+										<?php echo anchor('cart2/', $tbh_keranjang)?>
 										</div>
 									</a>
 								</div>

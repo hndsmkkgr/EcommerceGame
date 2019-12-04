@@ -28,23 +28,31 @@ class Platform extends CI_Controller {
 
 	public function keranjang($id)
 	{
-		$this->cekLogin();
+		if($this->session->isLoggedin)
+		{
+			$barang = $this->model_barang->find($id);
+			
+			$data = array(
+			'id'      => $barang->id_brg,
+			'qty'     => 1,
+			'price'   => $barang->harga,
+			'name'    => $barang->nama_brg
+			
+			);
 
-		$barang = $this->model_barang->find($id);
-		
-		$data = array(
-        'id'      => $barang->id_brg,
-        'qty'     => 1,
-        'price'   => $barang->harga,
-        'name'    => $barang->nama_brg
-        
-		);
-
-		$this->cart->insert($data);
-
-		// var_dump($this->session); die();
-		//$insert = $this->load->view('header');
-		redirect('platform');
+			$this->cart->insert($data);
+			
+			// var_dump($this->session); die();
+			//$insert = $this->load->view('header');
+			redirect('platform');
+		}
+		else
+		{
+			echo "<script>
+                alert('Please log in before purchasing!');
+			</script>";
+			redirect(base_url('platform'), 'refresh');
+		}
 	}
 
 	public function detail_keranjang()
@@ -60,19 +68,5 @@ class Platform extends CI_Controller {
 		$this->load->view('cart');
 		$this->load->view('footer'); 
 	}
-
-    public function cekLogin()
-    {
-		if($this->session->isLoggedin == false)
-		{
-			echo "<script>
-                alert('Please log in before purchasing');
-			</script>";
-			redirect(base_url('welcome'),'refresh');
-		}
-    }
-
-	
-
 
 }	
