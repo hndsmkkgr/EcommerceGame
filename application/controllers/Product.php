@@ -29,7 +29,9 @@ public function keranjang($id)
         'id'      => $barang->id_brg,
         'qty'     => 1,
         'price'   => $barang->harga,
-        'name'    => $barang->nama_brg
+        'name'    => $barang->nama_brg,
+        'kategori'=> $barang->kategori,
+        'stock' => $barang->stok
         
 		);
 
