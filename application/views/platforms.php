@@ -30,27 +30,24 @@
             <?php foreach ($barang as $brg) : ?> 
             <div class="product">
                 <div class="product_image"><img src="<?php echo base_url().'/upload/'.$brg->gambar?>" alt=""></div>
+                <?php if($brg->id_brg == 0)
+                {
+                  echo '<div class="product_extra product_hot"><a href="#">Hot</a></div>';
+                }
+                elseif($brg->id_brg == 1)
+                {
+                  echo'<div class="product_extra product_new"><a href="categories.html">New</a></div>';
+                }
+                elseif($brg->id_brg == 2)
+                {
+                  echo '<div class="product_extra product_sale"><a href="categories.html">Sale</a></div>';
+                }?>
                 <div class="product_content">
-                <div class="product_title">
-                  <a href="<?= base_url()?>Detil/index/<?= $brg->id_brg;?>"><?php echo $brg->nama_brg ?></a></div>
-
+                <div class="product_title"><a href="<?= base_url()?>detil/<?= $brg->id_brg;?>"><?php echo $brg->nama_brg ?></a></div>
                 <div class="product_type"><?php echo $brg->kategori ?></a></div>
                 <div class="product_price">Rp. <?php echo $brg->harga; ?></div>
                 <br/>
-
-                <!-- ini yang ditambah-->
-                <?php 
-
-                      if($this->session->isLoggedin)
-                      {
-                          echo anchor ('platform/keranjang/'. $brg->id_brg, '<div class="btn btn-sm btn-primary">Add to Cart</div>');
-                      }
-                      else
-                      {
-                        echo anchor ('Login/loginUser/', '<div class="btn btn-sm btn-primary">Add to Cart</div>');
-                      }
-
-                 ?>
+                <?php echo anchor ('platform/keranjang/'. $brg->id_brg, '<div class="btn btn-sm btn-primary">Add to Cart</div>') ?>
               </div>
             </div>
             <?php endforeach; ?>

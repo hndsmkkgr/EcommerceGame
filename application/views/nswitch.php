@@ -30,24 +30,17 @@
             <?php foreach ($barang as $brg) : ?> 
             <div class="product">
                 <div class="product_image"><img src="<?php echo base_url().'/upload/'.$brg->gambar?>" alt=""></div>
-                <div class="product_content">
-                <!-- <?php if($brg->id_brg == 4)
+                <?php if($brg->id_brg == 7)
                 {
                   echo '<div class="product_extra product_hot"><a href="#">Hot</a></div>';
                 }
-                elseif($brg->id == 5)
-                {
-                  echo'<div class="product_extra product_new"><a href="categories.html">New</a></div>';
-                }
-                elseif($brg->id_brg == 6)
-                {
-                  echo '<div class="product_extra product_sale"><a href="categories.html">Sale</a></div>';
-                }?> -->
+                ?>
+                <div class="product_content">
                 <div class="product_title"><a href="<?= base_url()?>detil/<?= $brg->id_brg;?>"><?php echo $brg->nama_brg ?></a></div>
                 <div class="product_type"><?php echo $brg->kategori ?></a></div>
                 <div class="product_price">Rp. <?php echo $brg->harga; ?></div>
                 <br/>
-                <?php echo anchor ('platform/keranjang/'. $brg->id_brg, '<div class="btn btn-sm btn-primary">Add to Cart</div>') ?>
+                <?php echo anchor ('platform/keranjang/'. $brg->id_brg, '<div class="btn btn-sm btn-primary" >Add to Cart</div>') ?>
               </div>
             </div>
             <?php endforeach; ?>
