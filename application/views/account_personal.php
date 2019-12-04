@@ -24,7 +24,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<?php include 'header.php' ?>
 
 	<!-- Menu -->
-
 	
 	<!-- Home -->
 
@@ -53,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<div class="profile_list_title">USERNAME</div>
 									<div>
 									<!-- Birthdate -->
-									<input type="text" id="username" class="profile_input" value="xtheprofessorx" maxlength="20" disabled>
+									<input type="text" id="username" class="profile_input" maxlength="20" disabled>
 									<div class="profile_text">Your username is a personal identifier unique to you. Username and avatar can be seen by other players in-game.</div>
 								</div>
 								</li>
@@ -69,17 +68,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 				<div class="col-lg-1">
 				
-				</div>
-				
+				</div>				
 
 				<!-- Personal Information -->
 
-				<div class="col-lg-7">
+				<div class="col-lg-7" id="personal_information">
 					<ul class=nav_menu>
-						  <li class="list"><a href="#home">PERSONAL<br>INFORMATION</a></li>
-						  <li class="list"><a href="address">ADDRESS<br>INFORMATION</a></li>
-						  <li class="list" style="margin-top:9px"><a href="#news">SECURITY SETTINGS</a></li>
-						  <li class="list" style="margin-top:9px"><a href="#contact">TRANSACTION HISTORY</a></li>
+						  <li class="list"><p class=text_menu>PERSONAL INFORMATION</p></li>
+						  <li class="list"><button class="page_button" 
+							onclick="changeVisibilityPersonal(); changeVisibilitySecurity2()">SECURITY SETTINGS</button></li>
 					</ul>
 					<div class="col-lg-12">
 					    <div class="account_section">
@@ -90,18 +87,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div>
 									<!-- Email address -->
 									<label for="account_email">EMAIL ADDRESS</label>
-									<input type="email" id="account_email" class="account_input" value="rickmanik123@gmail.com" disabled>
+									<input type="email" id="account_email" class="account_input" disabled>
 								</div>
 								<div class="row">
 									<div class="col-xl-6">
 										<!-- First Name -->
 										<label for="account_first_name">FIRST NAME</label>
-										<input type="text" id="account_first_name" class="account_input" value="Ricky" maxlength="20" disabled>
+										<input type="text" id="account_first_name" class="account_input" maxlength="20" disabled>
 									</div>
 									<div class="col-xl-6 last_name_col">
 										<!-- Last Name -->
 										<label for="account_last_name">LAST NAME</label>
-										<input type="text" id="account_last_name" class="account_input" value="Manik" maxlength="20" disabled>
+										<input type="text" id="account_last_name" class="account_input" maxlength="20" disabled>
 									</div>
 								</div>
 								<div>
@@ -109,7 +106,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<label for="account_gender">GENDER</label>
 									<select name="account_gender" id="account_gender" class="dropdown_item_select account_input" disabled>
 										<option></option>
-										<option value=male selected>MALE</option selected>
+										<option value=male>MALE</option>
 										<option value=female>FEMALE</option>
 										<option value=others>OTHERS</option>
 									</select>								
@@ -129,7 +126,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<label for="account_preferred_language">PREFERRED LANGUAGE</label>
 									<select name="account_preferref_language" id="account_preferred_language" class="dropdown_item_select account_input" disabled>
 										<option></option>
-										<option value=bahasa_indonesia selected>BAHASA INDONESIA</option>
+										<option value=bahasa_indonesia>BAHASA INDONESIA</option>
 										<option value=english>ENGLISH</option>
 									</select>
 								</div>
@@ -142,6 +139,57 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 					</div>
 				</div>
+
+				<!-- Security Settings -->
+
+				<div class="col-lg-7 security" id="security">
+					<ul class=nav_menu>
+						  <li class="list"><button class="page_button" onclick="changeVisibilitySecurity(); changeVisibilityPersonal2()">PERSONAL INFORMATION</button></li>
+						  <li class="list"><p class="text_menu">SECURITY SETTINGS</p></li>
+					</ul>
+					<div class="col-lg-12">
+					    <div class="account_section">
+						<div class="section_title">SECURITY SETTINGS</div>
+						<div class="section_subtitle">For your security, we highly recommend that you choose a unique password that you don't use for any other online account. </div>
+						<div class="account_form_container">
+							<form action="#" id="security_form" class="security_form" onsubmit="return false">
+								
+								<div class="row">
+									<div class="col-xl-6">
+										<!-- New Password -->
+										<label for="account_first_name">NEW PASSWORD</label>
+										<input type="text" id="account_first_name" class="account_input" maxlength="20" disabled>
+									</div>
+									<div class="col-xl-6 last_name_col">
+										<!-- Label -->
+										<label for="account_last_name">YOUR PASSWORD</label>
+										<div class="profile_text">These personal details are are private and will not be displayed to other users. .</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xl-6">
+										<!-- Retype New Password -->
+										<label for="account_first_name">RETYPE NEW PASSWORD</label>
+										<input type="text" id="account_first_name" class="account_input" maxlength="20" disabled>
+									</div>
+									<div class="col-xl-6 last_name_col">
+										<!-- Label -->
+										<label for="account_last_name"></label>
+										<div class="profile_text">Your password must not be the same as your last 5 passwords used.</div>
+									</div>
+								</div>
+							</form>
+
+								<button class="edit" onclick="grayer('security_form',false); changeVisibilityPassword2()">Edit</button>
+								<button class="edit" id="security_save" style="display:none" onclick="grayer('security_form',true); changeVisibilityPassword()">Save</button>
+						</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
 
 			</div>
 		</div>
@@ -165,13 +213,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	/* Edit and Save */
 	
-	function grayer(formId, yesNo) 
+	function grayer(personal_form, yesNo) 
 	{
-  		var f = document.getElementById(formId);
+  		var f = document.getElementById(personal_form);
    		for(var i=0; i<f.length; i++) f[i].disabled = yesNo;
 	
 		window.onload=function(){grayer('personal_form',true);}; // disabled by default
 	}
+
+	/* Edit and Save Password*/
+	
+	function grayer(security_form, yesNo) 
+	{
+  		var f = document.getElementById(security_form);
+   		for(var i=0; i<f.length; i++) f[i].disabled = yesNo;
+	
+		window.onload=function(){grayer('security_form',true);}; // disabled by default
+	}
+
+	/*-----------------------------------------------------------------------------------------------*/
 
 	/* Display Profile Button */
 
@@ -183,6 +243,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		document.getElementById("profile_save").style.display = "block";
 	}
 
+	/* Display Security Settings Button */
+
+		function changeVisibilityPassword() {
+  		document.getElementById("security_save").style.display = "none";
+	}
+
+	function changeVisibilityPassword2() {
+		document.getElementById("security_save").style.display = "block";
+	}
+
+
 	/* Display Button */
 
 	function changeVisibility() {
@@ -192,6 +263,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	function changeVisibility2() {
 		document.getElementById("save").style.display = "block";
 	}
+
+	/* Display Security Settings */
+
+	function changeVisibilitySecurity() {
+  		document.getElementById("security").style.display = "none";
+	}
+
+	function changeVisibilitySecurity2() {
+		document.getElementById("security").style.display = "block";
+	}
+
+	/* Display Security Personal Information */
+
+	function changeVisibilityPersonal() {
+  		document.getElementById("personal_information").style.display = "none";
+	}
+
+	function changeVisibilityPersonal2() {
+		document.getElementById("personal_information").style.display = "block";
+	}
+
+
+
+	/*-----------------------------------------------------------------------------------------------*/
 
 
 	</script>
