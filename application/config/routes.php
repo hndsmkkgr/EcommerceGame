@@ -57,9 +57,9 @@ $route['login'] = 'login';
 $route['signup'] = 'register';
 $route['cart'] = 'cart';
 $route['account'] = 'account';
-$route['Detil'] = 'Detil';
+$route['details'] = 'detil';
 $route['PS4'] = 'ps4';
 $route['xbox'] = 'xbox';
 $route['switch'] = 'switch';
-$route['3ds'] = 'n3ds';
+$route['n3ds'] = 'n3ds';
 ?>
