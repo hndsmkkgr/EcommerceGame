@@ -21,8 +21,8 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/checkout.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/cart.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/categories.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/product.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/contact.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/product.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/main_styles.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/header.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/footer.css">
@@ -69,7 +69,7 @@
 							</nav>
 							<div class="header_extra ml-auto">
 								<div class="shopping_cart">
-									<a href="<?php echo base_url();?>cart2">
+									<a href="<?php echo base_url();?>cart">
 										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 viewBox="0 0 489 489" style="enable-background:new 0 0 489 489;" xml:space="preserve">
 											<g>
@@ -82,7 +82,7 @@
 										</svg>
 										<div>
 											<?php $tbh_keranjang = 'Cart<span>(' .$this->cart->total_items() .')</span>'?>
-											<?php echo anchor('cart2/', $tbh_keranjang)?>
+											<?php echo anchor('cart/', $tbh_keranjang)?>
 										</div>
 									</a>
 								</div>
