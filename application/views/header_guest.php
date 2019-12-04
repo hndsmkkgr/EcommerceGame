@@ -178,7 +178,7 @@
 
 <div id="login" class="modal">
 	<span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
-  	<form class="modal-content" action="login/loginUser" method = "POST">
+  	<form class="modal-content" action="<?= base_url('login/loginUser') ?>" method = "POST">
     <div class="container">
       	<h1>Login</h1>
       	<hr>
