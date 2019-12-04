@@ -8,14 +8,7 @@ class Cart extends CI_Controller {
 		}
 	public function index()
 	{
-		if($this->session->isLoggedin)
-		{
-			$this->load->view('header');
-		}
-		else
-		{
-			$this->load->view('header_guest');
-        }
+		$this->load->view('header');
 		$this->load->view('cart');
 		$this->load->view('footer');
 	}

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2019 at 06:37 AM
+-- Generation Time: Dec 04, 2019 at 05:36 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.10
 
@@ -73,21 +73,21 @@ INSERT INTO `produk` (`id_brg`, `nama_brg`, `kategori`, `harga`, `detil`, `stok`
 CREATE TABLE `user` (
   `name` varchar(50) NOT NULL,
   `e-mail` varchar(64) NOT NULL,
-  `password` varchar(24) NOT NULL,
-  `country` varchar(20) NOT NULL,
-  `bday` date NOT NULL
+  `password` varchar(24) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=hp8;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`name`, `e-mail`, `password`, `country`, `bday`) VALUES
-('namates', 'emailtes', 'passtes', '0', '0000-00-00'),
-('Revyra Phoebe Fransiska', 'iniemail', 'a', '0', '0000-00-00'),
-('nama', 'mail', 'p', '0', '0000-00-00'),
-('Revyra Phoebe Fransiska', 'phoebe_yes@live.com', 'pass', '0', '0000-00-00'),
-('yeyeyeye', 'y', 'y', '0', '0000-00-00');
+INSERT INTO `user` (`name`, `e-mail`, `password`) VALUES
+('uuu', '132', '132'),
+('namates', 'emailtes', 'passtes'),
+('Revyra Phoebe Fransiska', 'iniemail', 'a'),
+('opopopop', 'm', 'm'),
+('nama', 'mail', 'p'),
+('Revyra Phoebe Fransiska', 'phoebe_yes@live.com', 'pass'),
+('yeyeyeye', 'y', 'y');
 
 --
 -- Indexes for dumped tables

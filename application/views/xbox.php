@@ -36,7 +36,7 @@
                 }
                 ?>
                 <div class="product_content">
-                <div class="product_title"><a href="<?= base_url()?>detil/<?= $brg->id_brg;?>"><?php echo $brg->nama_brg ?></a></div>
+                <div class="product_title"><a href="<?= base_url()?>Product/index/<?= $brg->id_brg;?>"><?php echo $brg->nama_brg ?></a></div>
                 <div class="product_type"><?php echo $brg->kategori ?></a></div>
                 <div class="product_price">Rp. <?php echo $brg->harga; ?></div>
                 <br/>

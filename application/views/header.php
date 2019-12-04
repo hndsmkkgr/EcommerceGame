@@ -6,29 +6,29 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Sublime project">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/bootstrap4/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/plugins/OwlCarousel2-2.2.1/animate.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/contact_responsive.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/categories_responsive.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/product_responsive.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/cart_responsive.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/checkout_responsive.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/account_responsive.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/account.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/checkout.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/cart.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/categories.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/product.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/contact.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/main_styles.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/header.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/footer.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/responsive.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/account.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/account_responsive.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/bootstrap4/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/plugins/OwlCarousel2-2.2.1/animate.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/contact_responsive.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/categories_responsive.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/product_responsive.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/cart_responsive.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/checkout_responsive.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/account_responsive.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/account.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/checkout.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/cart.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/categories.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/product.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/contact.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/main_styles.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/header.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/footer.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/responsive.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/account.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/account_responsive.css">
 
 </head>
 <body>
@@ -69,7 +69,7 @@
 							</nav>
 							<div class="header_extra ml-auto">
 								<div class="shopping_cart">
-									<a href="<?php echo base_url();?>cart2">
+									<a href="<?php echo base_url();?>cart">
 										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 viewBox="0 0 489 489" style="enable-background:new 0 0 489 489;" xml:space="preserve">
 											<g>
@@ -82,7 +82,7 @@
 										</svg>
 										<div>
 											<?php $tbh_keranjang = 'Cart<span>(' .$this->cart->total_items() .')</span>'?>
-											<?php echo anchor('cart2/', $tbh_keranjang)?>
+											<?php echo anchor('cart/', $tbh_keranjang)?>
 										</div>
 									</a>
 								</div>
