@@ -27,6 +27,9 @@
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/header.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/footer.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/responsive.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/account.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?> assets/styles/account_responsive.css">
+
 </head>
 <body>
 	<div class="super_container">
