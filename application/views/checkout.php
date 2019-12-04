@@ -3,7 +3,7 @@
 
 	<div class="home">
 		<div class="home_container">
-			<div class="home_background" style="background-image:url(assets/images/cart.jpg)"></div>
+			<div class="home_background" style="background-image:url(assets/images/cart_head.jpg)"></div>
 			<div class="home_content_container">
 				<div class="container">
 					<div class="row">
@@ -58,12 +58,17 @@
 
 								<li class="d-flex flex-row align-items-center justify-content-start">
 									<div class="order_list_title">Shipping</div>
-									<div class="order_list_value ml-auto">Free</div>
+									<div class="order_list_value ml-auto">Via Email (Free)</div>
 								</li>
 								<li class="d-flex flex-row align-items-center justify-content-start">
 									<div class="order_list_title">Total</div>
 									<div class="order_list_value ml-auto">Rp.<?php echo number_format($this->cart->total(), 0,',','.') ?></div>
 								</li>
+								<li class="d-flex flex-row align-items-center justify-content-start">
+									<div class="order_list_title">Payment Method: </div>
+									<div class="order_list_value ml-auto"></div>
+								</li>
+
 							</ul>
 						</div>
 						
@@ -72,10 +77,6 @@
 						<div class="payment">
 							<div class="payment_options">
 								<label class="payment_option clearfix">Paypal
-									<input type="radio" name="radio">
-									<span class="checkmark"></span>
-								</label>
-								<label class="payment_option clearfix">Cash on delivery
 									<input type="radio" name="radio">
 									<span class="checkmark"></span>
 								</label>

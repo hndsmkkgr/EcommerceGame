@@ -71,7 +71,7 @@
 								</li>
 								<li class="d-flex flex-row align-items-center justify-content-start">
 									<div class="cart_total_title">Shipping</div>
-									<div class="cart_total_value ml-auto">Free</div>
+									<div class="cart_total_value ml-auto">Via Email (Free)</div>
 								</li>
 								<li class="d-flex flex-row align-items-center justify-content-start">
 									<div class="cart_total_title">Total</div>
@@ -79,7 +79,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="button checkout_button"><a href="<?php echo base_url();?>checkout">>Proceed to checkout</a></div>
+						<div class="button checkout_button"><a href="<?php echo base_url();?>checkout">>Checkout</a></div>
 					</div>
 				</div>
 			</div>
