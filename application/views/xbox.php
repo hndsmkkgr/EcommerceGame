@@ -30,12 +30,17 @@
             <?php foreach ($barang as $brg) : ?> 
             <div class="product">
                 <div class="product_image"><img src="<?php echo base_url().'/upload/'.$brg->gambar?>" alt=""></div>
+                <?php if($brg->id_brg == 10)
+                {
+                  echo '<div class="product_extra product_hot"><a href="#">Hot</a></div>';
+                }
+                ?>
                 <div class="product_content">
-                <div class="product_title"><a href="<?= base_url()?>Detil/index/<?= $brg->id_brg;?>"><?php echo $brg->nama_brg ?></a></div>
+                <div class="product_title"><a href="<?= base_url()?>detil/<?= $brg->id_brg;?>"><?php echo $brg->nama_brg ?></a></div>
                 <div class="product_type"><?php echo $brg->kategori ?></a></div>
                 <div class="product_price">Rp. <?php echo $brg->harga; ?></div>
                 <br/>
-                <?php echo anchor ('Xbox/keranjang/'. $brg->id_brg, '<div class="btn btn-sm btn-primary">Add to Cart</div>') ?>
+                <?php echo anchor ('platform/keranjang/'. $brg->id_brg, '<div class="btn btn-sm btn-primary">Add to Cart</div>') ?>
               </div>
             </div>
             <?php endforeach; ?>

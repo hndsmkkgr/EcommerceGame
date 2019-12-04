@@ -30,6 +30,11 @@
             <?php foreach ($barang as $brg) : ?> 
             <div class="product">
                 <div class="product_image"><img src="<?php echo base_url().'/upload/'.$brg->gambar?>" alt=""></div>
+                <?php if($brg->id_brg == 4)
+                {
+                  echo '<div class="product_extra product_hot"><a href="#">Hot</a></div>';
+                }
+                ?>
                 <div class="product_content">
                 <div class="product_title"><a href="<?= base_url()?>detil/<?= $brg->id_brg;?>"><?php echo $brg->nama_brg ?></a></div>
                 <div class="product_type"><?php echo $brg->kategori ?></a></div>
