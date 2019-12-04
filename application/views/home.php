@@ -122,9 +122,6 @@
 	</div>
 
 	<!-- Products -->
-	<!-- <div class="product_extra product_new"><a href="categories.html">New</a></div>
-	<div class="product_extra product_sale"><a href="categories.html">Sale</a></div>
-	<div class="product_extra product_hot"><a href="#">Hot</a></div> -->
 
 	<div class="products">
 	  <div class="container">
