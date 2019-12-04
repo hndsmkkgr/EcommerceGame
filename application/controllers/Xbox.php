@@ -13,23 +13,7 @@ public function index(){
 		{
 			$this->load->view('header_guest');
         }
-		$this->load->view('Xbox',$data);
+		$this->load->view('PS4',$data);
 		$this->load->view('footer');
 	} 
-
-public function keranjang($id)
-	{
-		$barang = $this->model_barang->find($id);
-		
-		$data = array(
-        'id'      => $barang->id_brg,
-        'qty'     => 1,
-        'price'   => $barang->harga,
-        'name'    => $barang->nama_brg
-        
-		);
-
-		$this->cart->insert($data);
-		redirect('Xbox');
-	}
 }	

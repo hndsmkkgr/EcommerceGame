@@ -162,7 +162,7 @@
 	fill: #796363;
 }
 .shopping_cart a:hover svg,
-.shopping_cart a:hover div
+.shopping_cart a:hover div,
 {
 	fill: #e95a5a;
 	color: #e95a5a;

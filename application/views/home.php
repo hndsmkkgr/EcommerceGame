@@ -114,7 +114,7 @@
 					<div class="avds_large_content">
 						<div class="avds_title">Nintendo Switch Games</div>
 						<div class="avds_text">Buy new games now.</div>
-						<div class="avds_link avds_link_large"><a href="<?php echo base_url();?>switch">See More</a></div>
+						<div class="avds_link avds_link_large"><a href="<?php echo base_url();?>nswitch">See More</a></div>
 					</div>
 				</div>
 			</div>
@@ -124,94 +124,37 @@
 	<!-- Products -->
 
 	<div class="products">
-		<div class="container">
+	  <div class="container">
 			<div class="row">
 				<div class="col">
-					
-					<div class="product_grid">
+					<div class="product_grid">  
 
-						<!-- Product -->
-						<div class="product">
-							<div class="product_image"><img src="assets/images/kh3Thumb.jpg" alt=""></div>
-							<div class="product_extra product_new"><a href="categories.html">New</a></div>
-							<div class="product_content">
-								<div class="product_title"><a href="product.html">Kingdom Hearts III</a></div>
-								<div class="product_price">$40</div>
-							</div>
-						</div>
-
-						<!-- Product -->
-						<div class="product">
-							<div class="product_image"><img src="assets/images/nierAThumb.jpg" alt=""></div>
-							<div class="product_extra product_sale"><a href="categories.html">Sale</a></div>
-							<div class="product_content">
-								<div class="product_title"><a href="product.html">NieR: Automata</a></div>
-								<div class="product_price">$39.99</div>
-							</div>
-						</div>
-
-						<!-- Product -->
-						<div class="product">
-							<div class="product_image"><img src="assets/images/fomtThumb.png" alt=""></div>
-							<div class="product_content">
-								<div class="product_title"><a href="product.html">Story of Seasons: Friends of Mineral Town</a></div>
-								<div class="product_price">$50</div>
-							</div>
-						</div>
-
-						<!-- Product -->
-						<div class="product">
-							<div class="product_image"><img src="assets/images/botwThumb.jpg" alt=""></div>
-							<div class="product_content">
-								<div class="product_title"><a href="product.html">Legend of Zelda: Breath of the Wild</a></div>
-								<div class="product_price">$59.99</div>
-							</div>
-						</div>
-
-						<!-- Product -->
-						<div class="product">
-							<div class="product_image"><img src="assets/images/minecraftThumb.jpg" alt=""></div>
-							<div class="product_content">
-								<div class="product_title"><a href="product.html">Minecraft</a></div>
-								<div class="product_price">$29.99</div>
-							</div>
-						</div>
-
-						<!-- Product -->
-						<div class="product">
-							<div class="product_image"><img src="assets/images/gtavThumb.jpg" alt=""></div>
-							<div class="product_extra product_hot"><a href="#">Hot</a></div>
-							<div class="product_content">
-								<div class="product_title"><a href="#">GTA V</a></div>
-								<div class="product_price">Rp.350000</div>
-							</div>
-						</div>
-
-						<!-- Product -->
-						<div class="product">
-							<div class="product_image"><img src="assets/images/ffxvThumb.jpg" alt=""></div>
-							<div class="product_content">
-								<div class="product_title"><a href="product.html">Final Fantasy XV</a></div>
-								<div class="product_price">$39.99</div>
-							</div>
-						</div>
-
-						<!-- Product -->
-						<div class="product">
-							<div class="product_image"><img src="assets/images/mgsvThumb.jpg" alt=""></div>
-							<div class="product_extra product_sale"><a href="categories.html">Hot</a></div>
-							<div class="product_content">
-								<div class="product_title"><a href="product.html">Metal Gear Solid V: Phantom Pain</a></div>
-								<div class="product_price">$60</div>
-							</div>
-						</div>
-
-					</div>
-						
-				</div>
-			</div>
-		</div>
-	</div>
+            <?php foreach ($barang as $brg) : ?> 
+            <div class="product">
+                <div class="product_image"><img src="<?php echo base_url().'/upload/'.$brg->gambar?>" alt=""></div>
+                <?php if($brg->id_brg == 0)
+                {
+                  echo '<div class="product_extra product_hot"><a href="#">Hot</a></div>';
+                }
+                elseif($brg->id_brg == 1)
+                {
+                  echo'<div class="product_extra product_new"><a href="categories.html">New</a></div>';
+                }
+                elseif($brg->id_brg == 2)
+                {
+                  echo '<div class="product_extra product_sale"><a href="categories.html">Sale</a></div>';
+                }?>
+                <div class="product_content">
+                <div class="product_title"><a href="<?= base_url()?>detil/<?= $brg->id_brg;?>"><?php echo $brg->nama_brg ?></a></div>
+                <div class="product_type"><?php echo $brg->kategori ?></a></div>
+                </div>
+            </div>
+            <?php endforeach; ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 	<!-- Ad -->
 

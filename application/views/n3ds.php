@@ -30,7 +30,7 @@
             <?php foreach ($barang as $brg) : ?> 
             <div class="product">
                 <div class="product_image"><img src="<?php echo base_url().'/upload/'.$brg->gambar?>" alt=""></div>
-                <?php if($brg->id_brg == 0)
+                <?php if($brg->id_brg == 4)
                 {
                   echo '<div class="product_extra product_hot"><a href="#">Hot</a></div>';
                 }
@@ -65,5 +65,5 @@
 				</div>
 			</div>
 		</div>
-  </div>
+	</div>
   <br/>

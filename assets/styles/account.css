@@ -56,86 +56,23 @@ ul
 	margin-bottom: 0px;
 }
 .nav_menu
- {
-	list-style-type: none;
-	margin-left: 15px;
-	margin-right: 15px;
-	margin-bottom: 15px;
-	margin-top: 0px;
+ {	
 	overflow: hidden;
-	background-color: #848d99;
+	background-color: #5a6068;
+	color:white;
+	margin:15px;
+}
+.text_menu{
 
-}
-  
-.list 
-{
-	float: left;
-	
-}
-  
-.list a 
-{	
-	display: block;
+	float:left;
+	color:white;
 	color: white;
 	text-align: center;
-	padding: 19.5px;
+	padding-top: 14px;
+	padding-left: 83px;
+	padding-right: 83px;
+	padding-bottom: 14px;
 	text-decoration: none;
-
-}
-  
-.list a:hover 
-{
-	background-color: #111111;
-	
-}
-
-p
-{
-	font-family: 'Poppins', sans-serif;
-	font-size: 14px;
-	line-height: 2.14;
-	font-weight: 400;
-	color: #6c6a74;
-	-webkit-font-smoothing: antialiased;
-	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
-	text-shadow: rgba(0,0,0,.01) 0 0 1px;
-}
-p a
-{
-	display: inline;
-	position: relative;
-	color: inherit;
-	border-bottom: solid 1px #ffa07f;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-p:last-of-type
-{
-	margin-bottom: 0;
-}
-a, a:hover, a:visited, a:active, a:link
-{
-	text-decoration: none;
-	-webkit-font-smoothing: antialiased;
-	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
-	text-shadow: rgba(0,0,0,.01) 0 0 1px;
-}
-p a:active
-{
-	position: relative;
-	color: #FF6347;
-}
-p a:hover
-{
-	color: #FFFFFF;
-	background: #ffa07f;
-}
-p a:hover::after
-{
-	opacity: 0.2;
 }
 
 h1{font-size: 48px;}
@@ -389,11 +326,11 @@ section
 	width: 100%;
 	margin-top: 46px;
 }
-.personal_form,.profile_form > div:not(:last-child)
+.personal_form,.profile_form,.security_form > div:not(:last-child)
 {
 	margin-bottom: 14px;
 }
-.personal_form,.profile_form label
+.personal_form,.profile_form label,.security_form
 {
 	font-size: 14px;
 	font-weight: 400;
@@ -489,7 +426,7 @@ section
 {
 	width: 100%;
 	margin-top: 30px;
-	border: 2pt solid #e2def3;
+	border: 2pt solid #2b00eb;
 	padding: 10px;
 	background-color:rgb(14, 154, 209);
 }
@@ -501,6 +438,39 @@ section
 	padding: 10px;
 	background-color:#1b1b1b;
 	color:white;
+}
+
+.security
+{
+	display:none;
+}
+
+.page_button{
+
+	float:left;
+	color: white;
+	background-color:#5a6068;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 82px;
+	padding-right: 83px;
+	border:none;
+	
+}
+
+.page_button:hover{
+
+	float:left;
+	color: white;
+	background-color: #1b1b1b;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 82px;
+	padding-right: 83px;
+	border:none;
+
 }
 
 

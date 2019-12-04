@@ -1,13 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Cart extends CI_Controller {
-	public function __construct()
-		{
-			parent:: __construct();
-		}
+class Nswitch extends CI_Controller
+{
 	public function index()
 	{
+		$data['barang'] = $this->model_kategori->data_switch()->result();
 		if($this->session->isLoggedin)
 		{
 			$this->load->view('header');
@@ -16,8 +14,7 @@ class Cart extends CI_Controller {
 		{
 			$this->load->view('header_guest');
         }
-		$this->load->view('cart');
+		$this->load->view('nswitch',$data);
 		$this->load->view('footer');
-	}
-}
-?>
+	} 
+}	

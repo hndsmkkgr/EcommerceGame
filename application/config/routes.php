@@ -60,6 +60,6 @@ $route['account'] = 'account';
 $route['details'] = 'detil';
 $route['PS4'] = 'ps4';
 $route['xbox'] = 'xbox';
-$route['switch'] = 'switch';
-$route['3ds'] = 'n3ds';
+$route['nswitch'] = 'nswitch';
+$route['n3ds'] = 'n3ds';
 ?>
