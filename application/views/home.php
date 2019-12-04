@@ -114,7 +114,7 @@
 					<div class="avds_large_content">
 						<div class="avds_title">Nintendo Switch Games</div>
 						<div class="avds_text">Buy new games now.</div>
-						<div class="avds_link avds_link_large"><a href="<?php echo base_url();?>switch">See More</a></div>
+						<div class="avds_link avds_link_large"><a href="<?php echo base_url();?>nswitch">See More</a></div>
 					</div>
 				</div>
 			</div>
