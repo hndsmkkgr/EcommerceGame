@@ -17,7 +17,13 @@ class Checkout extends CI_Controller {
 			$this->load->view('header_guest');
         }
 		$this->load->view('checkout');
-		$this->load->view('footer');
+		// $this->load->view('footer');
+	}
+
+	public function hapus_keranjang()
+	{
+		$this->cart->destroy();
+		redirect('checkout');
 	}
 }
 ?>
