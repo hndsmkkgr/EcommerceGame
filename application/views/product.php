@@ -1,9 +1,10 @@
 <div class="super_container">
+
 	<!-- Home -->
 
 	<div class="home">
 		<div class="home_container">
-			<div class="home_background" style="background-image:url(assets/images/categories.jpg)"></div>
+			<div class="home_background" style="background-image:url(images/categories.jpg)"></div>
 			<div class="home_content_container">
 				<div class="container">
 					<div class="row">
@@ -28,44 +29,20 @@
 				<!-- Product Image -->
 				<div class="col-lg-6">
 					<div class="details_image">
-						<div class="details_image_large"><img src="assets/images/details_1.jpg" alt=""><div class="product_extra product_new"><a href="categories.html">New</a></div></div>
-						<div class="details_image_thumbnails d-flex flex-row align-items-start justify-content-between">
-							<div class="details_image_thumbnail active" data-image="images/details_1.jpg"><img src="assets/images/details_1.jpg" alt=""></div>
-							<div class="details_image_thumbnail" data-image="assets/images/details_2.jpg"><img src="assets/images/details_2.jpg" alt=""></div>
-							<div class="details_image_thumbnail" data-image="assets/images/details_3.jpg"><img src="assets/images/details_3.jpg" alt=""></div>
-							<div class="details_image_thumbnail" data-image="assets/images/details_4.jpg"><img src="assets/images/details_4.jpg" alt=""></div>
-						</div>
+						<div class="details_image_large"><img src="<?=base_url()?>/upload/<?= $tampil_detil->gambar;?>" alt=""><div class="product_extra product_new"><a href="categories.html">New</a></div></div>
 					</div>
 				</div>
 
 				<!-- Product Content -->
 				<div class="col-lg-6">
 					<div class="details_content">
-						<div class="details_name">Smart Phone</div>
-						<div class="details_discount">$890</div>
-						<div class="details_price">$670</div>
+						<div class="details_name"><?= $tampil_detil->nama_brg;?></div>
+						<div class="details_price">Rp. <?= $tampil_detil->harga;?></div>
 
-						<!-- In Stock -->
-						<div class="in_stock_container">
-							<div class="availability">Availability:</div>
-							<span>In Stock</span>
-						</div>
 						<div class="details_text">
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Phasellus id nisi quis justo tempus mollis sed et dui. In hac habitasse platea dictumst. Suspendisse ultrices mauris diam. Nullam sed aliquet elit. Mauris consequat nisi ut mauris efficitur lacinia.</p>
+							<p><?= $tampil_detil->detil;?></p>
 						</div>
 
-						<!-- Product Quantity -->
-						<div class="product_quantity_container">
-							<div class="product_quantity clearfix">
-								<span>Qty</span>
-								<input id="quantity_input" type="text" pattern="[0-9]*" value="1">
-								<div class="quantity_buttons">
-									<div id="quantity_inc_button" class="quantity_inc quantity_control"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
-									<div id="quantity_dec_button" class="quantity_dec quantity_control"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
-								</div>
-							</div>
-							<div class="button cart_button"><a href="#">Add to cart</a></div>
-						</div>
 
 						<!-- Share -->
 						<div class="details_share">
@@ -76,6 +53,10 @@
 								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 							</ul>
+						</div>
+
+						<div>
+							<?php echo anchor ('product/keranjang/'. $tampil_detil->id_brg, '<div class="btn btn-sm btn-primary">Add to Cart</div>') ?>
 						</div>
 					</div>
 				</div>
@@ -111,7 +92,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="assets/images/product_1.jpg" alt=""></div>
+							<div class="product_image"><img src="images/product_1.jpg" alt=""></div>
 							<div class="product_extra product_new"><a href="categories.html">New</a></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.html">Smart Phone</a></div>
@@ -121,7 +102,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="assets/images/product_2.jpg" alt=""></div>
+							<div class="product_image"><img src="images/product_2.jpg" alt=""></div>
 							<div class="product_extra product_sale"><a href="categories.html">Sale</a></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.html">Smart Phone</a></div>
@@ -131,7 +112,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="assets/images/product_3.jpg" alt=""></div>
+							<div class="product_image"><img src="images/product_3.jpg" alt=""></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.html">Smart Phone</a></div>
 								<div class="product_price">$710</div>
@@ -140,7 +121,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="assets/images/product_4.jpg" alt=""></div>
+							<div class="product_image"><img src="images/product_4.jpg" alt=""></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.html">Smart Phone</a></div>
 								<div class="product_price">$330</div>
@@ -179,16 +160,31 @@
 		</div>
 	</div>
 
-<script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="assets/styles/bootstrap4/popper.js"></script>
-<script src="assets/styles/bootstrap4/bootstrap.min.js"></script>
-<script src="assets/plugins/greensock/TweenMax.min.js"></script>
-<script src="assets/plugins/greensock/TimelineMax.min.js"></script>
-<script src="assets/plugins/scrollmagic/ScrollMagic.min.js"></script>
-<script src="assets/plugins/greensock/animation.gsap.min.js"></script>
-<script src="assets/plugins/greensock/ScrollToPlugin.min.js"></script>
-<script src="assets/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="assets/plugins/Isotope/isotope.pkgd.min.js"></script>
-<script src="assets/plugins/easing/easing.js"></script>
-<script src="assets/plugins/parallax-js-master/parallax.min.js"></script>
-<script src="assets/js/product.js"></script>
+	<!-- Footer -->
+	
+	<div class="footer_overlay"></div>
+	<footer class="footer">
+		<div class="footer_background" style="background-image:url(images/footer.jpg)"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+						<div class="footer_logo"><a href="#">Sublime.</a></div>
+						<div class="copyright ml-auto mr-auto"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+						<div class="footer_social ml-lg-auto">
+							<ul>
+								<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
