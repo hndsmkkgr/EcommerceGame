@@ -27,6 +27,6 @@ TUBES WEB: GAMESHOP
 	
 	-Untuk memasukkan barang ke cart pengguna tinggal menekan tombol add to cart
 	
-	-Pengguna dapat mengedit barang yang dibelinya pada laman cart
+	-Pengguna dapat mengedit (jumlah) barang yang dibelinya pada laman cart
 	
 	-untuk membeli barang pengguna tinggal melakukan checkout dengan menekan tombol checkout
