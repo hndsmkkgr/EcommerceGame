@@ -21,8 +21,8 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/checkout.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/cart.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/categories.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/contact.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/product.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/contact.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/main_styles.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/header.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/footer.css">
