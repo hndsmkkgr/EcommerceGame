@@ -18,7 +18,7 @@
 									<div class="home_slider_content"  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
 										<div class="home_slider_title">Death Stranding</div>
 										<div class="home_slider_subtitle">Tomorrow is in your hands<br/>Out now, only on PS4!</div>
-										<div class="button button_light home_button"><a href="#">Shop Now</a></div>
+										<div class="button button_light home_button"><a href="<?php echo base_url();?>ps4">Shop Now</a></div>
 									</div>
 								</div>
 							</div>
@@ -36,7 +36,7 @@
 									<div class="home_slider_content"  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
 										<div class="home_slider_title">Fire Emblem: Three Houses</div>
 										<div class="home_slider_subtitle">Choose your houses!<br/>Out now, only on Nintendo Switch!</div>
-										<div class="button button_light home_button"><a href="#">Shop Now</a></div>
+										<div class="button button_light home_button"><a href="<?php echo base_url();?>nswitch">Shop Now</a></div>
 									</div>
 								</div>
 							</div>
@@ -55,7 +55,7 @@
 										<div class="home_slider_title">Final Fantasy VII Remake</div>
 										<div class="home_slider_subtitle"> is an upcoming action role-playing game.<br/>
 											It is the first part of a series of multiple releases.<br/>Preorders now open, only on PS4!</div>
-										<div class="button button_light home_button"><a href="#">Shop Now</a></div>
+										<div class="button button_light home_button"><a href="<?php echo base_url();?>ps4">Shop Now</a></div>
 									</div>
 								</div>
 							</div>
