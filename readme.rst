@@ -43,3 +43,5 @@ TUBES WEB: GAMESHOP
 	-Di sublaman personal information, pengguna dapat mengedit dan save data email, fullname, nationality, gender, birthday, language, dan nickname
 	
 	-Di sublaman security settings, pengguna dapat mengedit dan save password baru
+	
+	-Cara mengeditnya adalah pengguna harus mengklik tombol edit terlebih dahulu, baru isi textbox bisa diubah, kemudian klik save untuk menyimpannya. Setelah diklik save, textbox tidak dapat diedit hingga pengguna mengklik edit lagi
