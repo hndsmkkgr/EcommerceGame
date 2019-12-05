@@ -101,7 +101,7 @@
 
 <script>
 function myFunction() {
-	Swal.fire('Order Success'); 
+	Swal.fire('Order Success!<br/>Thank you for purchasing!'); 
 }
 </script>
 
