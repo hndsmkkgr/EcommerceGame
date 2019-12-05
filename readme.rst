@@ -29,8 +29,19 @@ TUBES WEB: GAMESHOP
 	
 	-Pengguna dapat mengosongkan cart dengan menekan tombol clear cart
 	
+	-Jika pengguna sudah di laman cart tapi belum ingin checkout ia dapat pindah ke laman lain dengan memilih menu lain atau dengan mengklik continue shopping
+	
 	-untuk membeli barang pengguna tinggal melakukan checkout dengan menekan tombol checkout
 	
 	-Dalam checkout pengguna dapat memilih salah satu metode pembayaran antara lain Paypal, bank transfer, dan credit card
 	
 	-untuk konfirmasi pembelian tinggal klik Place Order
+
+6. Akun
+	-Pengguna dapat berpindah subalaman dengan mengklik personal information atau security settings
+	
+	-Di sublaman personal information, pengguna dapat mengedit dan save data email, fullname, nationality, gender, birthday, language, dan nickname
+	
+	-Di sublaman security settings, pengguna dapat mengedit dan save password baru
+	
+	-Cara mengeditnya adalah pengguna harus mengklik tombol edit terlebih dahulu, baru isi textbox bisa diubah, kemudian klik save untuk menyimpannya. Setelah diklik save, textbox tidak dapat diedit hingga pengguna mengklik edit lagi
