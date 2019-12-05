@@ -76,15 +76,15 @@
 						<!-- Payment Options -->
 						<div class="payment">
 							<div class="payment_options">
-								<label class="payment_option clearfix">Paypal
+								<label class="payment_option clearfix">Paypal: gameshop@paypalcom
 									<input type="radio" name="radio">
 									<span class="checkmark"></span>
 								</label>
-								<label class="payment_option clearfix">Credit card
+								<label class="payment_option clearfix">Credit card: VISA xxxx xxxx
 									<input type="radio" name="radio">
 									<span class="checkmark"></span>
 								</label>
-								<label class="payment_option clearfix">Direct bank transfer
+								<label class="payment_option clearfix">Direct bank transfer: BCA xxxx xxxx
 									<input type="radio" checked="checked" name="radio">
 									<span class="checkmark"></span>
 								</label>
