@@ -39,7 +39,7 @@ public function keranjang($id)
 
 		// var_dump($this->session); die();
 		//$insert = $this->load->view('header');
-		redirect('Product/index/');
+		redirect('Product/index/'.$id);
 	}
 
 	public function detail_keranjang()
